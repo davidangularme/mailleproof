@@ -33,7 +33,7 @@ python3 lot01_search.py
 `evidence.json` records, for each run on the dedicated compute host: server, start time, duration, exit code,
 SHA-256 of the code and of the output, and the output itself.
 
-- `phase2_lot01_original` — the run that found the witness (polyscoperx, 18 108 s).
+- `phase2_lot01_original` — the run that found the witness (server-A, 18 108 s).
 - `witness_recount_independent` — a different program (`recount.py`) recounting the witness: 113.
 - `phase3_lot01_original` and `phase3_lot01_reproduction` — the same code, target ≥ 114, executed on two
   **different servers**: identical output, byte for byte (same `stdout_sha256`). No permutation ≥ 114 among these prefixes.

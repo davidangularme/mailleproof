@@ -23,7 +23,7 @@
  "runs": {
   "phase2_lot01_original": {
    "what": "search run that found the witness (prefixes [1,2],[1,3],[1,4],[1,5], target >= 113)",
-   "server": "polyscoperx",
+   "server": "server-A",
    "started_utc": "2026-10-20T09:21:33Z",
    "duration_s": 18108.146,
    "exit_code": 0,
@@ -36,7 +36,7 @@
   },
   "witness_recount_independent": {
    "what": "independent recount of the witness with a different program (recount.py)",
-   "server": "polyscoperx",
+   "server": "server-A",
    "started_utc": "2026-10-20T17:11:12Z",
    "duration_s": 0.114,
    "exit_code": 0,
@@ -49,7 +49,7 @@
   },
   "phase3_lot01_original": {
    "what": "second search, target >= 114, same prefixes (none found: max 113)",
-   "server": "polyscoperx",
+   "server": "server-A",
    "started_utc": "2026-10-20T17:41:13Z",
    "duration_s": 15355.715,
    "exit_code": 0,
@@ -62,7 +62,7 @@
   },
   "phase3_lot01_reproduction": {
    "what": "re-execution of the exact same code on a different server: byte-identical output",
-   "server": "hokmah-dev",
+   "server": "server-B",
    "started_utc": "2026-10-20T22:00:47Z",
    "duration_s": 14218.402,
    "exit_code": 0,

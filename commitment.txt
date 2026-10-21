@@ -1,0 +1,6 @@
+Commitment (2026-10-21): SHA-256 of a complete archive of the mission records
+(every claim, computation record, reproduction and link, exported from the shared memory).
+The archive will be published after our patent filings; anyone can then verify that
+nothing was rewritten.
+
+sha256(a389241_mission_archive_2026-10-21.tgz) = f1ada608d1621d919623648326f85c84ca92f828cf27cd62f8f6b664b08662f7

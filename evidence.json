@@ -1,0 +1,82 @@
+{
+ "sequence": "OEIS A389241 — maximum number of distinct consecutive sums of a permutation of [n]",
+ "known_terms": "a(0..15) = 0,1,3,6,9,13,19,25,32,39,47,56,66,77,89,100",
+ "claim": "a(16) >= 113",
+ "witness": [
+  1,
+  2,
+  6,
+  11,
+  13,
+  4,
+  14,
+  9,
+  12,
+  8,
+  15,
+  16,
+  10,
+  5,
+  7,
+  3
+ ],
+ "runs": {
+  "phase2_lot01_original": {
+   "what": "search run that found the witness (prefixes [1,2],[1,3],[1,4],[1,5], target >= 113)",
+   "server": "polyscoperx",
+   "started_utc": "2026-10-20T09:21:33Z",
+   "duration_s": 18108.146,
+   "exit_code": 0,
+   "code_sha256": "77badde92d3151df3ce12e2630d1748270a94e923e7d5dc04d211427825a8d49",
+   "code_bytes": 4653,
+   "stdout_sha256": "f16af0d176de8d99c7f897877c290142d050f3c66f627077e69855c4b2ae7647",
+   "stdout_bytes": 781,
+   "rerun_of": null,
+   "stdout": "compilateur /usr/bin/gcc\ncontrole_n3_9_ok True\nn16_prefixe_1_2_score_max 113\nn16_prefixe_1_2_trouve_geq113 True\nn16_prefixe_1_2_witness [1, 2, 6, 11, 13, 4, 14, 9, 12, 8, 15, 16, 10, 5, 7, 3]\nn16_prefixe_1_2_noeuds 11160133999\nn16_prefixe_1_2_duree_s 4057.765\nn16_prefixe_1_3_score_max 112\nn16_prefixe_1_3_trouve_geq113 False\nn16_prefixe_1_3_witness None\nn16_prefixe_1_3_noeuds 12995436172\nn16_prefixe_1_3_duree_s 4719.352\nn16_prefixe_1_4_score_max 112\nn16_prefixe_1_4_trouve_geq113 False\nn16_prefixe_1_4_witness None\nn16_prefixe_1_4_noeuds 12645095002\nn16_prefixe_1_4_duree_s 4696.598\nn16_prefixe_1_5_score_max 112\nn16_prefixe_1_5_trouve_geq113 False\nn16_prefixe_1_5_witness None\nn16_prefixe_1_5_noeuds 12343972000\nn16_prefixe_1_5_duree_s 4634.000\nexit 0 duree_totale_s 18107.854\n"
+  },
+  "witness_recount_independent": {
+   "what": "independent recount of the witness with a different program (recount.py)",
+   "server": "polyscoperx",
+   "started_utc": "2026-10-20T17:11:12Z",
+   "duration_s": 0.114,
+   "exit_code": 0,
+   "code_sha256": "fb1f3d43f759794ee854b633cf4956db72bbf6d15cb39f4d3fc85454ca9127e2",
+   "code_bytes": 343,
+   "stdout_sha256": "23b878a9e905bcd10253c85b0394c2b9cb3bac25084c3932137979f496e93652",
+   "stdout_bytes": 82,
+   "rerun_of": null,
+   "stdout": "CONTROLE_permutation_de_1_16 True\ntemoin_sommes_distinctes 113\ntemoin_geq113 True\n"
+  },
+  "phase3_lot01_original": {
+   "what": "second search, target >= 114, same prefixes (none found: max 113)",
+   "server": "polyscoperx",
+   "started_utc": "2026-10-20T17:41:13Z",
+   "duration_s": 15355.715,
+   "exit_code": 0,
+   "code_sha256": "b5aba61fb980d17343de184bdf38e8385c1bf3ad81ad1c1691f3ca0ee138b39c",
+   "code_bytes": 5787,
+   "stdout_sha256": "5f5afda248a04f3593d22ef4e57dabf9ca6d4851a4e13d11f0f138d35725645f",
+   "stdout_bytes": 695,
+   "rerun_of": null,
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_1_2_score_max 113\nn16_prefixe_1_2_trouve_geq114 False\nn16_prefixe_1_2_witness None\nn16_prefixe_1_2_noeuds 10416791254\nn16_prefixe_1_3_score_max 113\nn16_prefixe_1_3_trouve_geq114 False\nn16_prefixe_1_3_witness None\nn16_prefixe_1_3_noeuds 10280215728\nn16_prefixe_1_4_score_max 113\nn16_prefixe_1_4_trouve_geq114 False\nn16_prefixe_1_4_witness None\nn16_prefixe_1_4_noeuds 9999837039\nn16_prefixe_1_5_score_max 113\nn16_prefixe_1_5_trouve_geq114 False\nn16_prefixe_1_5_witness None\nn16_prefixe_1_5_noeuds 9755020083\nexit 0\n"
+  },
+  "phase3_lot01_reproduction": {
+   "what": "re-execution of the exact same code on a different server: byte-identical output",
+   "server": "hokmah-dev",
+   "started_utc": "2026-10-20T22:00:47Z",
+   "duration_s": 14218.402,
+   "exit_code": 0,
+   "code_sha256": "b5aba61fb980d17343de184bdf38e8385c1bf3ad81ad1c1691f3ca0ee138b39c",
+   "code_bytes": 5787,
+   "stdout_sha256": "5f5afda248a04f3593d22ef4e57dabf9ca6d4851a4e13d11f0f138d35725645f",
+   "stdout_bytes": 695,
+   "rerun_of": "job-f14f8ce6ca1d4a8f8c57",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_1_2_score_max 113\nn16_prefixe_1_2_trouve_geq114 False\nn16_prefixe_1_2_witness None\nn16_prefixe_1_2_noeuds 10416791254\nn16_prefixe_1_3_score_max 113\nn16_prefixe_1_3_trouve_geq114 False\nn16_prefixe_1_3_witness None\nn16_prefixe_1_3_noeuds 10280215728\nn16_prefixe_1_4_score_max 113\nn16_prefixe_1_4_trouve_geq114 False\nn16_prefixe_1_4_witness None\nn16_prefixe_1_4_noeuds 9999837039\nn16_prefixe_1_5_score_max 113\nn16_prefixe_1_5_trouve_geq114 False\nn16_prefixe_1_5_witness None\nn16_prefixe_1_5_noeuds 9755020083\nexit 0\n"
+  }
+ },
+ "notes": [
+  "Each run executed on a dedicated, network-less compute host that records the SHA-256 of the code and of the output.",
+  "phase3_lot01_reproduction re-ran the exact code of phase3_lot01_original (rerun_of) from another server; the two stdout hashes are identical.",
+  "lot01_search.py is byte-for-byte the code of phase2_lot01_original (check its SHA-256)."
+ ]
+}

@@ -61,4 +61,5 @@ outputs are byte-identical, and anyone can re-run any lot.
 - `phase3/` — the exhaustive search: reference program, the 60 exact programs, their outputs and the checker.
 - `commitment.txt` — SHA-256 of a complete archive of the phase-2 mission records (to be published later).
 
-Frédéric David Blum — Catalyst AI Research
+Frédéric David Blum — Catalyst AI Research, Haifa, Israel
+ORCID [0009-0009-2487-2974](https://orcid.org/0009-0009-2487-2974) — contact: freddavidblum@catalystais.com

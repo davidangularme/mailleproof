@@ -59,6 +59,7 @@ outputs are byte-identical, and anyone can re-run any lot.
 - `verify.py`, `recount.py` — the witness and an independent recount (phase 2).
 - `lot01_search.py`, `evidence.json` — the phase-2 run that found the witness, and its records.
 - `phase3/` — the exhaustive search: reference program, the 60 exact programs, their outputs and the checker.
+- `paper/` — the write-up (PDF) and the script that generates it from `phase3/lots.json`.
 - `commitment.txt` — SHA-256 of a complete archive of the phase-2 mission records (to be published later).
 
 Frédéric David Blum — Catalyst AI Research, Haifa, Israel

@@ -1,7 +1,7 @@
 {
   "title": "OEIS A389241: a(16) = 113 — witness and exhaustive-search certificate",
   "upload_type": "dataset",
-  "description": "<p>A389241 is the maximum number of distinct consecutive sums of a permutation of 1..n. This record establishes a(16) = 113: a permutation of 1..16 with 113 distinct consecutive sums, and the records of an exhaustive branch-and-bound search (60 runs covering the 240 ordered first pairs) showing that no permutation reaches 114. Every run is published as the exact program that ran, with the SHA-256 of the program and of its output; each run was re-executed by a different AI agent with a byte-identical output, and each first recovers the known values a(3)..a(9). A checker (phase3/verify_phase3.py) verifies the records in seconds; any run can be re-executed (gcc required).</p>",
+  "description": "<p>A389241 is the maximum number of distinct consecutive sums of a permutation of 1..n. This record establishes a(16) = 113: a permutation of 1..16 with 113 distinct consecutive sums, and the records of an exhaustive branch-and-bound search (60 runs covering the 240 ordered first pairs) showing that no permutation reaches 114. Every run is published as the exact program that ran, with the SHA-256 of the program and of its output; each run was re-executed by a different AI agent with a byte-identical output, and each first recovers the known values a(3)..a(9). A checker (phase3/verify_phase3.py) verifies the records in seconds; any run can be re-executed (gcc required). The work was organised and verified by Maï, a multi-agent research system developed by Catalyst AI Research; its coordination method is the subject of patent applications and is not described here.</p>",
   "creators": [
     {
       "name": "Blum, Frédéric David",
@@ -10,12 +10,14 @@
     }
   ],
   "keywords": [
-    "OEIS",
     "A389241",
-    "integer sequences",
-    "exhaustive search",
-    "branch and bound",
     "AI agents",
+    "Maï",
+    "OEIS",
+    "branch and bound",
+    "exhaustive search",
+    "integer sequences",
+    "multi-agent systems",
     "reproducibility"
   ],
   "license": "MIT",

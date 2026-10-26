@@ -41,12 +41,15 @@ python3 phase3/codes/lot01.py     # 1 to 6 CPU hours per run; 60 runs in total
 The search took about 270 CPU hours, and about 290 more for the independent re-executions (563 hours in total, on
 dedicated network-less compute hosts that record the SHA-256 of every program and every output).
 
-## How it was done
+## How it was done: Maï
 
-Three small AI agents (Claude Haiku), each on its own server, split the work, launched the runs and checked each
-other: no result counted until a **different agent** had re-executed the exact same program with a byte-identical
-output, and every program had first shown that it finds the known values a(3)..a(9). Model cost of the agents for
-the exhaustive search: about 14 US dollars. How the agents coordinate is the subject of patent applications and is not described here.
+This result was produced by **Maï**, a multi-agent research system developed by Catalyst AI Research. In Maï, AI
+agents running on separate servers split a research mission into tasks, launch the computations on dedicated compute
+hosts that record every program and every output, and check each other's work. No agent can make a result count by
+stating it: a result is accepted only after **another agent** has re-executed the exact same program with a
+byte-identical output, and every program must first recover known values (positive control). For a(16), three Maï
+agents (based on Claude Haiku, Anthropic) organised and verified the entire exhaustive search, for a model cost of
+about 14 US dollars. Maï's coordination method is the subject of patent applications and is not described here.
 
 **Correction (2026-10-26).** The previous version of this repository said that the re-execution of the first
 phase-3 run took place "on a different server". It was submitted by a different agent but ran on the **same**

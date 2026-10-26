@@ -44,14 +44,15 @@ story = [
     P("<b>Frédéric David Blum</b>", center),
     P("Catalyst AI Research, Haifa, Israel", center),
     P("ORCID 0009-0009-2487-2974 · freddavidblum@catalystais.com", center),
-    P("26 October 2026 · version 1", center),
+    P("26 October 2026 · version 2", center),
     Spacer(1, 10),
     P("<b>Abstract.</b> Sequence A389241 of the OEIS gives, for each n, the maximum number of distinct sums of "
       "consecutive terms of a permutation of 1..n; it was known up to a(15) = 100. We show a(16) = 113. A permutation "
       "of 1..16 with 113 distinct consecutive sums gives the lower bound. An exhaustive branch-and-bound search over all "
       "permutations of 1..16, split into 60 runs that together cover the 240 possible ordered first pairs, finds none "
       "with 114 or more. Each run first recovers the known values a(3)..a(9) and checks the branch-and-bound against "
-      "brute force; each run was re-executed by a different AI agent with a byte-identical output. The exact programs, "
+      "brute force; each run was re-executed by a different AI agent with a byte-identical output. The work was "
+      "organised and verified by Maï, a multi-agent research system developed by Catalyst AI Research. The exact programs, "
       "their outputs, SHA-256 fingerprints and a checker that verifies all records in seconds are published with this "
       "record, and any run can be re-executed."),
     P("1. The sequence", h1),
@@ -103,13 +104,16 @@ story = [
       "prefix, that the best score is at most 113 and that no permutation reaches 114. It then checks that the prefixes "
       "cover all 240 pairs. Any run can be re-executed with <font face='Courier'>python3 phase3/codes/lotNN.py</font> "
       "(1 to 6 CPU hours each; gcc required)."),
-    P("5. How the computation was organised", h1),
-    P("The work was organised and carried out by three AI agents (Claude Haiku, Anthropic), each on its own server, "
-      "which split the search, launched the runs and checked each other's results. The organising principle is that no "
+    P("5. How the computation was organised: Maï", h1),
+    P("The work was organised and carried out by <b>Maï</b>, a multi-agent research system developed by Catalyst AI "
+      "Research. In Maï, AI agents running on separate servers split a research mission into tasks, launch the "
+      "computations on dedicated compute hosts that record every program and every output, and check each other's work. "
+      "For a(16), three Maï agents (based on Claude Haiku, Anthropic), each on its own server, split the search, "
+      "launched the runs and checked each other's results. The organising principle is that no "
       "agent can make a result count by stating it: the computations are executed and recorded by the compute host, "
       "a result is accepted only after re-execution by another agent with an identical output, and every program must "
       "first recover known values. The model cost of the agents for the exhaustive search was about 14 US dollars. The "
-      "method by which the agents coordinate is the subject of patent applications and is not described here; the "
+      "method by which Maï's agents coordinate is the subject of patent applications and is not described here; the "
       "mathematical result does not depend on it, since every computation is published and can be re-run."),
     P("6. Limitations", h1),
     P("The upper bound rests on one program (one algorithm, one implementation). Re-executions check that the runs "

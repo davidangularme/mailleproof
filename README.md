@@ -1,5 +1,9 @@
 # OEIS A389241: a(16) = 113
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23668801.svg)](https://doi.org/10.5281/zenodo.23668801)
+
+Archived on Zenodo: [10.5281/zenodo.23668801](https://doi.org/10.5281/zenodo.23668801) (all versions).
+
 [A389241](https://oeis.org/A389241) is the maximum number of distinct consecutive sums of a permutation of 1..n.
 The sequence was known up to a(15) = 100. This repository establishes **a(16) = 113**:
 

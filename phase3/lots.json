@@ -1,0 +1,1650 @@
+{
+ "sequence": "A389241",
+ "n": 16,
+ "target": 114,
+ "question": "is there a permutation of 1..16 with at least 114 distinct consecutive sums?",
+ "reference_code": "reference_search.py",
+ "variable_line": "PREFIXES",
+ "hosts": {
+  "host-1": "main dedicated compute host",
+  "host-2": "second, independent compute host (from 2026-10-26)"
+ },
+ "lots": [
+  {
+   "lot": 1,
+   "prefixes": [
+    "[1,2]",
+    "[1,3]",
+    "[1,4]",
+    "[1,5]",
+    "[1,2]",
+    "[1,3]",
+    "[1,4]",
+    "[1,5]"
+   ],
+   "code_file": "codes/lot01.py",
+   "code_sha256": "b5aba61fb980d17343de184bdf38e8385c1bf3ad81ad1c1691f3ca0ee138b39c",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_1_2_score_max 113\nn16_prefixe_1_2_trouve_geq114 False\nn16_prefixe_1_2_witness None\nn16_prefixe_1_2_noeuds 10416791254\nn16_prefixe_1_3_score_max 113\nn16_prefixe_1_3_trouve_geq114 False\nn16_prefixe_1_3_witness None\nn16_prefixe_1_3_noeuds 10280215728\nn16_prefixe_1_4_score_max 113\nn16_prefixe_1_4_trouve_geq114 False\nn16_prefixe_1_4_witness None\nn16_prefixe_1_4_noeuds 9999837039\nn16_prefixe_1_5_score_max 113\nn16_prefixe_1_5_trouve_geq114 False\nn16_prefixe_1_5_witness None\nn16_prefixe_1_5_noeuds 9755020083\nexit 0\n",
+   "stdout_sha256": "5f5afda248a04f3593d22ef4e57dabf9ca6d4851a4e13d11f0f138d35725645f",
+   "original": {
+    "job": "job-f14f8ce6ca1d4a8f8c57",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 15355.715
+   },
+   "reproduction": {
+    "job": "job-484e8d0ffe54455e83a2",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14218.402,
+    "stdout_sha256": "5f5afda248a04f3593d22ef4e57dabf9ca6d4851a4e13d11f0f138d35725645f"
+   }
+  },
+  {
+   "lot": 2,
+   "prefixes": [
+    "[1,6]",
+    "[1,7]",
+    "[1,8]",
+    "[1,9]",
+    "[1,6]",
+    "[1,7]",
+    "[1,8]",
+    "[1,9]"
+   ],
+   "code_file": "codes/lot02.py",
+   "code_sha256": "23578eb634efe7bf0e5237e8f3c3e5c727063a34950fd65ae73aaa39bc3e528c",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_1_6_score_max 113\nn16_prefixe_1_6_trouve_geq114 False\nn16_prefixe_1_6_witness None\nn16_prefixe_1_6_noeuds 9497640430\nn16_prefixe_1_7_score_max 113\nn16_prefixe_1_7_trouve_geq114 False\nn16_prefixe_1_7_witness None\nn16_prefixe_1_7_noeuds 9277753802\nn16_prefixe_1_8_score_max 113\nn16_prefixe_1_8_trouve_geq114 False\nn16_prefixe_1_8_witness None\nn16_prefixe_1_8_noeuds 8957134251\nn16_prefixe_1_9_score_max 113\nn16_prefixe_1_9_trouve_geq114 False\nn16_prefixe_1_9_witness None\nn16_prefixe_1_9_noeuds 8752179556\nexit 0\n",
+   "stdout_sha256": "f32ec8e4030c0c305b4f55fd2bf75925151e3e50b800befa4adce817b84ad84b",
+   "original": {
+    "job": "job-24fd2c8a991e4a1c84c5",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14272.928
+   },
+   "reproduction": {
+    "job": "job-dc0d0ffeb98f42df9c32",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 13370.32,
+    "stdout_sha256": "f32ec8e4030c0c305b4f55fd2bf75925151e3e50b800befa4adce817b84ad84b"
+   }
+  },
+  {
+   "lot": 3,
+   "prefixes": [
+    "[1,10]",
+    "[1,11]",
+    "[1,12]",
+    "[1,13]",
+    "[1,10]",
+    "[1,11]",
+    "[1,12]",
+    "[1,13]"
+   ],
+   "code_file": "codes/lot03.py",
+   "code_sha256": "ef2702213f70e19eba533a1815c47f40f3dbcb5a39232c7adf57698274051ff2",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_1_10_score_max 113\nn16_prefixe_1_10_trouve_geq114 False\nn16_prefixe_1_10_witness None\nn16_prefixe_1_10_noeuds 8519183889\nn16_prefixe_1_11_score_max 113\nn16_prefixe_1_11_trouve_geq114 False\nn16_prefixe_1_11_witness None\nn16_prefixe_1_11_noeuds 8297976383\nn16_prefixe_1_12_score_max 113\nn16_prefixe_1_12_trouve_geq114 False\nn16_prefixe_1_12_witness None\nn16_prefixe_1_12_noeuds 8066676385\nn16_prefixe_1_13_score_max 113\nn16_prefixe_1_13_trouve_geq114 False\nn16_prefixe_1_13_witness None\nn16_prefixe_1_13_noeuds 7862558066\nexit 0\n",
+   "stdout_sha256": "a9d54cbeb3bdcda57e36f17b721bbb9d9d524b68176f7dd94ce212da8a5ebd92",
+   "original": {
+    "job": "job-38f1c8c51d5c47f8a582",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 13110.512
+   },
+   "reproduction": {
+    "job": "job-a6ce0bb9ca4e4ba5bc46",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 16598.735,
+    "stdout_sha256": "a9d54cbeb3bdcda57e36f17b721bbb9d9d524b68176f7dd94ce212da8a5ebd92"
+   }
+  },
+  {
+   "lot": 4,
+   "prefixes": [
+    "[1,14]",
+    "[1,15]",
+    "[1,16]",
+    "[2,1]"
+   ],
+   "code_file": "codes/lot04.py",
+   "code_sha256": "3fe3301f8faab105147558b2c7d2215ded7b5c30682a175fe252bb13776f0540",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_1_14_score_max 113\nn16_prefixe_1_14_trouve_geq114 False\nn16_prefixe_1_14_witness None\nn16_prefixe_1_14_noeuds 7633108975\nn16_prefixe_1_15_score_max 113\nn16_prefixe_1_15_trouve_geq114 False\nn16_prefixe_1_15_witness None\nn16_prefixe_1_15_noeuds 7373285183\nn16_prefixe_1_16_score_max 113\nn16_prefixe_1_16_trouve_geq114 False\nn16_prefixe_1_16_witness None\nn16_prefixe_1_16_noeuds 8277777462\nn16_prefixe_2_1_score_max 113\nn16_prefixe_2_1_trouve_geq114 False\nn16_prefixe_2_1_witness None\nn16_prefixe_2_1_noeuds 10229304328\nexit 0\n",
+   "stdout_sha256": "81b196433dbeb26567809a2e64713cbd0740ec7b087518d8ba8c1fc0feb46ab7",
+   "original": {
+    "job": "job-48832ea8aca94c37a52b",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 13262.427
+   },
+   "reproduction": {
+    "job": "job-60b0bab2af30457886f3",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 21391.939,
+    "stdout_sha256": "81b196433dbeb26567809a2e64713cbd0740ec7b087518d8ba8c1fc0feb46ab7"
+   }
+  },
+  {
+   "lot": 5,
+   "prefixes": [
+    "[2,3]",
+    "[2,4]",
+    "[2,5]",
+    "[2,6]"
+   ],
+   "code_file": "codes/lot05.py",
+   "code_sha256": "4a1131e9ef33738945689aa2706a9e6a693aa624f29822dc2f5a252caa8ca9bc",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_2_3_score_max 113\nn16_prefixe_2_3_trouve_geq114 False\nn16_prefixe_2_3_witness None\nn16_prefixe_2_3_noeuds 9831406761\nn16_prefixe_2_4_score_max 113\nn16_prefixe_2_4_trouve_geq114 False\nn16_prefixe_2_4_witness None\nn16_prefixe_2_4_noeuds 9612774405\nn16_prefixe_2_5_score_max 113\nn16_prefixe_2_5_trouve_geq114 False\nn16_prefixe_2_5_witness None\nn16_prefixe_2_5_noeuds 9359072348\nn16_prefixe_2_6_score_max 113\nn16_prefixe_2_6_trouve_geq114 False\nn16_prefixe_2_6_witness None\nn16_prefixe_2_6_noeuds 9219429286\nexit 0\n",
+   "stdout_sha256": "cb957adf1abd9233cc49be0f2b8f2588cb83e7b9fc4fe75ce26f0c7ac42189df",
+   "original": {
+    "job": "job-9febb3946fd247b69c32",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14671.186
+   },
+   "reproduction": {
+    "job": "job-24d098e45a124e1e87a3",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 13629.048,
+    "stdout_sha256": "cb957adf1abd9233cc49be0f2b8f2588cb83e7b9fc4fe75ce26f0c7ac42189df"
+   }
+  },
+  {
+   "lot": 6,
+   "prefixes": [
+    "[2,7]",
+    "[2,8]",
+    "[2,9]",
+    "[2,10]",
+    "[2,7]",
+    "[2,8]",
+    "[2,9]",
+    "[2,10]"
+   ],
+   "code_file": "codes/lot06.py",
+   "code_sha256": "6bc394e2c80e38d95b63227d18f4612ee8ed8a31138643d65530c39c71e874e1",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_2_7_score_max 113\nn16_prefixe_2_7_trouve_geq114 False\nn16_prefixe_2_7_witness None\nn16_prefixe_2_7_noeuds 8901011370\nn16_prefixe_2_8_score_max 113\nn16_prefixe_2_8_trouve_geq114 False\nn16_prefixe_2_8_witness None\nn16_prefixe_2_8_noeuds 8698755092\nn16_prefixe_2_9_score_max 113\nn16_prefixe_2_9_trouve_geq114 False\nn16_prefixe_2_9_witness None\nn16_prefixe_2_9_noeuds 8419465253\nn16_prefixe_2_10_score_max 113\nn16_prefixe_2_10_trouve_geq114 False\nn16_prefixe_2_10_witness None\nn16_prefixe_2_10_noeuds 8265387336\nexit 0\n",
+   "stdout_sha256": "dba26f7214c7be8384b7ff41017f3d8873678b217610325eeed6623b26275fa2",
+   "original": {
+    "job": "job-1f9f83e130534b4b8e02",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 21465.989
+   },
+   "reproduction": {
+    "job": "job-1bc2df87e6204f4ca97f",
+    "agent": "agent-B",
+    "host": "host-2",
+    "duration_s": 18452.095,
+    "stdout_sha256": "dba26f7214c7be8384b7ff41017f3d8873678b217610325eeed6623b26275fa2"
+   }
+  },
+  {
+   "lot": 7,
+   "prefixes": [
+    "[2,11]",
+    "[2,12]",
+    "[2,13]",
+    "[2,14]"
+   ],
+   "code_file": "codes/lot07.py",
+   "code_sha256": "7b166c78235bb0b5bde57bd2cfc7339f3148e4ca9854862283a202be84c04834",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_2_11_score_max 113\nn16_prefixe_2_11_trouve_geq114 False\nn16_prefixe_2_11_witness None\nn16_prefixe_2_11_noeuds 7998112932\nn16_prefixe_2_12_score_max 113\nn16_prefixe_2_12_trouve_geq114 False\nn16_prefixe_2_12_witness None\nn16_prefixe_2_12_noeuds 7844362307\nn16_prefixe_2_13_score_max 113\nn16_prefixe_2_13_trouve_geq114 False\nn16_prefixe_2_13_witness None\nn16_prefixe_2_13_noeuds 7518513139\nn16_prefixe_2_14_score_max 113\nn16_prefixe_2_14_trouve_geq114 False\nn16_prefixe_2_14_witness None\nn16_prefixe_2_14_noeuds 7379379930\nexit 0\n",
+   "stdout_sha256": "160b16dc068a91b549d76e126542bea09bad8069f9fbcca5fda1c129ad696e4b",
+   "original": {
+    "job": "job-d58799872b5544139212",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 11707.228
+   },
+   "reproduction": {
+    "job": "job-2e3f3322f8b54b4aabf1",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 19424.449,
+    "stdout_sha256": "160b16dc068a91b549d76e126542bea09bad8069f9fbcca5fda1c129ad696e4b"
+   }
+  },
+  {
+   "lot": 8,
+   "prefixes": [
+    "[2,15]",
+    "[2,16]",
+    "[3,1]",
+    "[3,2]"
+   ],
+   "code_file": "codes/lot08.py",
+   "code_sha256": "ee5883f71371ce34f71defe7734b37ce4c73505ad76da4f00d64fe6ad45bef18",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_2_15_score_max 113\nn16_prefixe_2_15_trouve_geq114 False\nn16_prefixe_2_15_witness None\nn16_prefixe_2_15_noeuds 8230995115\nn16_prefixe_2_16_score_max 113\nn16_prefixe_2_16_trouve_geq114 False\nn16_prefixe_2_16_witness None\nn16_prefixe_2_16_noeuds 8079476292\nn16_prefixe_3_1_score_max 113\nn16_prefixe_3_1_trouve_geq114 False\nn16_prefixe_3_1_witness None\nn16_prefixe_3_1_noeuds 9924507459\nn16_prefixe_3_2_score_max 113\nn16_prefixe_3_2_trouve_geq114 False\nn16_prefixe_3_2_witness None\nn16_prefixe_3_2_noeuds 9664016837\nexit 0\n",
+   "stdout_sha256": "c4c6b1930cc3b3b856d8009d9439c56526640640f509c06178f06b7ee5d60b74",
+   "original": {
+    "job": "job-0d6e57a1f6344694baa4",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 13032.523
+   },
+   "reproduction": {
+    "job": "job-1bdf4bff4ef4493eb05e",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 21495.384,
+    "stdout_sha256": "c4c6b1930cc3b3b856d8009d9439c56526640640f509c06178f06b7ee5d60b74"
+   }
+  },
+  {
+   "lot": 9,
+   "prefixes": [
+    "[3,4]",
+    "[3,5]",
+    "[3,6]",
+    "[3,7]",
+    "[3,4]",
+    "[3,5]",
+    "[3,6]",
+    "[3,7]"
+   ],
+   "code_file": "codes/lot09.py",
+   "code_sha256": "e02735a0af3f839bd4da4c27ca7e86023e00b9d8d4858df731425fd95d4d30e0",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_3_4_score_max 113\nn16_prefixe_3_4_trouve_geq114 False\nn16_prefixe_3_4_witness None\nn16_prefixe_3_4_noeuds 9159756228\nn16_prefixe_3_5_score_max 113\nn16_prefixe_3_5_trouve_geq114 False\nn16_prefixe_3_5_witness None\nn16_prefixe_3_5_noeuds 8957209660\nn16_prefixe_3_6_score_max 113\nn16_prefixe_3_6_trouve_geq114 False\nn16_prefixe_3_6_witness None\nn16_prefixe_3_6_noeuds 8648372135\nn16_prefixe_3_7_score_max 113\nn16_prefixe_3_7_trouve_geq114 False\nn16_prefixe_3_7_witness None\nn16_prefixe_3_7_noeuds 8443371576\nexit 0\n",
+   "stdout_sha256": "fd32d7518de2d8de29846e3cedbf14028f004f021cb4880f13211c87b242743b",
+   "original": {
+    "job": "job-7bda33b59918488987d0",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 17762.292
+   },
+   "reproduction": {
+    "job": "job-809fb0ff7d434d358731",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 21026.682,
+    "stdout_sha256": "fd32d7518de2d8de29846e3cedbf14028f004f021cb4880f13211c87b242743b"
+   }
+  },
+  {
+   "lot": 10,
+   "prefixes": [
+    "[3,8]",
+    "[3,9]",
+    "[3,10]",
+    "[3,11]",
+    "[3,8]",
+    "[3,9]",
+    "[3,10]",
+    "[3,11]"
+   ],
+   "code_file": "codes/lot10.py",
+   "code_sha256": "1d4febe5d03c92906c2bd228a0de05c7cdf491cd7584cf36d2cfe35d0f2586b6",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_3_8_score_max 113\nn16_prefixe_3_8_trouve_geq114 False\nn16_prefixe_3_8_witness None\nn16_prefixe_3_8_noeuds 8243465600\nn16_prefixe_3_9_score_max 113\nn16_prefixe_3_9_trouve_geq114 False\nn16_prefixe_3_9_witness None\nn16_prefixe_3_9_noeuds 8066485330\nn16_prefixe_3_10_score_max 113\nn16_prefixe_3_10_trouve_geq114 False\nn16_prefixe_3_10_witness None\nn16_prefixe_3_10_noeuds 7844536489\nn16_prefixe_3_11_score_max 113\nn16_prefixe_3_11_trouve_geq114 False\nn16_prefixe_3_11_witness None\nn16_prefixe_3_11_noeuds 7588090695\nexit 0\n",
+   "stdout_sha256": "69a68dcb02dcca5f2282aeafae3cd830a9be88110d207efe2b091810cf01433f",
+   "original": {
+    "job": "job-6a0e777e206f465bb2b7",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 11905.821
+   },
+   "reproduction": {
+    "job": "job-1e05b01783964b108547",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 21228.926,
+    "stdout_sha256": "69a68dcb02dcca5f2282aeafae3cd830a9be88110d207efe2b091810cf01433f"
+   }
+  },
+  {
+   "lot": 11,
+   "prefixes": [
+    "[3,12]",
+    "[3,13]",
+    "[3,14]",
+    "[3,15]",
+    "[3,12]",
+    "[3,13]",
+    "[3,14]",
+    "[3,15]"
+   ],
+   "code_file": "codes/lot11.py",
+   "code_sha256": "51f4cd8b42f8b4b4bfe52329a0fdd6a7858b393e02054ca39456f3d9999c5d2e",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_3_12_score_max 113\nn16_prefixe_3_12_trouve_geq114 False\nn16_prefixe_3_12_witness None\nn16_prefixe_3_12_noeuds 7380839384\nn16_prefixe_3_13_score_max 113\nn16_prefixe_3_13_trouve_geq114 False\nn16_prefixe_3_13_witness None\nn16_prefixe_3_13_noeuds 7208265812\nn16_prefixe_3_14_score_max 113\nn16_prefixe_3_14_trouve_geq114 False\nn16_prefixe_3_14_witness None\nn16_prefixe_3_14_noeuds 8095833284\nn16_prefixe_3_15_score_max 113\nn16_prefixe_3_15_trouve_geq114 False\nn16_prefixe_3_15_witness None\nn16_prefixe_3_15_noeuds 7918445449\nexit 0\n",
+   "stdout_sha256": "4280f63e8fb605180b2f7aac863093839ab47656f9d70412718fdb128c426bae",
+   "original": {
+    "job": "job-00bd73222de0481eb1a7",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 13416.612
+   },
+   "reproduction": {
+    "job": "job-a0a85ca1e7004f6d83d6",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 19972.997,
+    "stdout_sha256": "4280f63e8fb605180b2f7aac863093839ab47656f9d70412718fdb128c426bae"
+   }
+  },
+  {
+   "lot": 12,
+   "prefixes": [
+    "[3,16]",
+    "[4,1]",
+    "[4,2]",
+    "[4,3]"
+   ],
+   "code_file": "codes/lot12.py",
+   "code_sha256": "b9566740bcc93bb190a6f3c8f00e1e4366f41c5b9ec6b99fd806e7d105ca754d",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_3_16_score_max 113\nn16_prefixe_3_16_trouve_geq114 False\nn16_prefixe_3_16_witness None\nn16_prefixe_3_16_noeuds 7671418199\nn16_prefixe_4_1_score_max 113\nn16_prefixe_4_1_trouve_geq114 False\nn16_prefixe_4_1_witness None\nn16_prefixe_4_1_noeuds 9473537261\nn16_prefixe_4_2_score_max 113\nn16_prefixe_4_2_trouve_geq114 False\nn16_prefixe_4_2_witness None\nn16_prefixe_4_2_noeuds 9239209869\nn16_prefixe_4_3_score_max 113\nn16_prefixe_4_3_trouve_geq114 False\nn16_prefixe_4_3_witness None\nn16_prefixe_4_3_noeuds 9017789595\nexit 0\n",
+   "stdout_sha256": "5c98ab00481d65cf5f36ee9cd3d9973365c79e603270af2b0991f29a92fe370a",
+   "original": {
+    "job": "job-4daac5c571da47598c54",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 17789.007
+   },
+   "reproduction": {
+    "job": "job-00b829036f2e4ede9388",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 21479.243,
+    "stdout_sha256": "5c98ab00481d65cf5f36ee9cd3d9973365c79e603270af2b0991f29a92fe370a"
+   }
+  },
+  {
+   "lot": 13,
+   "prefixes": [
+    "[4,5]",
+    "[4,6]",
+    "[4,7]",
+    "[4,8]"
+   ],
+   "code_file": "codes/lot13.py",
+   "code_sha256": "0f689ab6907c9de79bff43aab8d9cfb90fb079c4dbf120fe664e992326365eb6",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_4_5_score_max 113\nn16_prefixe_4_5_trouve_geq114 False\nn16_prefixe_4_5_witness None\nn16_prefixe_4_5_noeuds 8576751268\nn16_prefixe_4_6_score_max 113\nn16_prefixe_4_6_trouve_geq114 False\nn16_prefixe_4_6_witness None\nn16_prefixe_4_6_noeuds 8446787256\nn16_prefixe_4_7_score_max 113\nn16_prefixe_4_7_trouve_geq114 False\nn16_prefixe_4_7_witness None\nn16_prefixe_4_7_noeuds 8116433622\nn16_prefixe_4_8_score_max 113\nn16_prefixe_4_8_trouve_geq114 False\nn16_prefixe_4_8_witness None\nn16_prefixe_4_8_noeuds 7930368113\nexit 0\n",
+   "stdout_sha256": "c5d313a15105efd3751e389ee3beb7c3126c5b6388d31f8b88efa9be307add28",
+   "original": {
+    "job": "job-6a367eaff30544d2b5b0",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 13717.041
+   },
+   "reproduction": {
+    "job": "job-7a719f3a12414fc7a63a",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 22073.404,
+    "stdout_sha256": "c5d313a15105efd3751e389ee3beb7c3126c5b6388d31f8b88efa9be307add28"
+   }
+  },
+  {
+   "lot": 14,
+   "prefixes": [
+    "[4,9]",
+    "[4,10]",
+    "[4,11]",
+    "[4,12]"
+   ],
+   "code_file": "codes/lot14.py",
+   "code_sha256": "a7684eb9c9df9edcc64d98d8a32556450e7393a9c6d9bf6f7b5da06b55923f7c",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_4_9_score_max 113\nn16_prefixe_4_9_trouve_geq114 False\nn16_prefixe_4_9_witness None\nn16_prefixe_4_9_noeuds 7673427290\nn16_prefixe_4_10_score_max 113\nn16_prefixe_4_10_trouve_geq114 False\nn16_prefixe_4_10_witness None\nn16_prefixe_4_10_noeuds 7553454028\nn16_prefixe_4_11_score_max 113\nn16_prefixe_4_11_trouve_geq114 False\nn16_prefixe_4_11_witness None\nn16_prefixe_4_11_noeuds 7296928202\nn16_prefixe_4_12_score_max 113\nn16_prefixe_4_12_trouve_geq114 False\nn16_prefixe_4_12_witness None\nn16_prefixe_4_12_noeuds 7181270768\nexit 0\n",
+   "stdout_sha256": "906f7b62ca146a5d805fbff49877a0c3dca3bc6a90d4fe95caa5fb6a16188957",
+   "original": {
+    "job": "job-7ed79ee6d1554b018c5f",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14066.683
+   },
+   "reproduction": {
+    "job": "job-fa439b2161124030a20d",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 19260.531,
+    "stdout_sha256": "906f7b62ca146a5d805fbff49877a0c3dca3bc6a90d4fe95caa5fb6a16188957"
+   }
+  },
+  {
+   "lot": 15,
+   "prefixes": [
+    "[4,13]",
+    "[4,14]",
+    "[4,15]",
+    "[4,16]"
+   ],
+   "code_file": "codes/lot15.py",
+   "code_sha256": "7b39fde34dd00c5fa6ff5a919f45575d3242ec352c0ff9f889ac68a47a853d5a",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_4_13_score_max 113\nn16_prefixe_4_13_trouve_geq114 False\nn16_prefixe_4_13_witness None\nn16_prefixe_4_13_noeuds 8020496163\nn16_prefixe_4_14_score_max 113\nn16_prefixe_4_14_trouve_geq114 False\nn16_prefixe_4_14_witness None\nn16_prefixe_4_14_noeuds 7878702633\nn16_prefixe_4_15_score_max 113\nn16_prefixe_4_15_trouve_geq114 False\nn16_prefixe_4_15_witness None\nn16_prefixe_4_15_noeuds 7608482092\nn16_prefixe_4_16_score_max 113\nn16_prefixe_4_16_trouve_geq114 False\nn16_prefixe_4_16_witness None\nn16_prefixe_4_16_noeuds 7489665440\nexit 0\n",
+   "stdout_sha256": "27e9986ff7ecda30eba2cf014f364dcd355786f4212dfda86c0443083d51c55f",
+   "original": {
+    "job": "job-c8c5fea900b647dca6f3",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 20187.113
+   },
+   "reproduction": {
+    "job": "job-afa931ee4ba743259915",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 20293.898,
+    "stdout_sha256": "27e9986ff7ecda30eba2cf014f364dcd355786f4212dfda86c0443083d51c55f"
+   }
+  },
+  {
+   "lot": 16,
+   "prefixes": [
+    "[5,1]",
+    "[5,2]",
+    "[5,3]",
+    "[5,4]",
+    "[5,1]",
+    "[5,2]",
+    "[5,3]",
+    "[5,4]"
+   ],
+   "code_file": "codes/lot16.py",
+   "code_sha256": "dc623e79e67ca92ff35a633e81026e106f5796bfa6907a95afc86a83f9d06cc9",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_5_1_score_max 113\nn16_prefixe_5_1_trouve_geq114 False\nn16_prefixe_5_1_witness None\nn16_prefixe_5_1_noeuds 9053153043\nn16_prefixe_5_2_score_max 113\nn16_prefixe_5_2_trouve_geq114 False\nn16_prefixe_5_2_witness None\nn16_prefixe_5_2_noeuds 8844804519\nn16_prefixe_5_3_score_max 113\nn16_prefixe_5_3_trouve_geq114 False\nn16_prefixe_5_3_witness None\nn16_prefixe_5_3_noeuds 8638992221\nn16_prefixe_5_4_score_max 113\nn16_prefixe_5_4_trouve_geq114 False\nn16_prefixe_5_4_witness None\nn16_prefixe_5_4_noeuds 8429369199\nexit 0\n",
+   "stdout_sha256": "6e0fda75a1303d2bc23f8a837bd13e1697df230f2ae7e4a7044e4146329e910a",
+   "original": {
+    "job": "job-50e643f67c5045a79033",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 15130.259
+   },
+   "reproduction": {
+    "job": "job-41fffe29c61341b3b27e",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 24857.037,
+    "stdout_sha256": "6e0fda75a1303d2bc23f8a837bd13e1697df230f2ae7e4a7044e4146329e910a"
+   }
+  },
+  {
+   "lot": 17,
+   "prefixes": [
+    "[5,6]",
+    "[5,7]",
+    "[5,8]",
+    "[5,9]"
+   ],
+   "code_file": "codes/lot17.py",
+   "code_sha256": "d8c9a1e890f89616e9d0f6b3a7583e7dcde01957e4766965cd145eda1478887e",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_5_6_score_max 113\nn16_prefixe_5_6_trouve_geq114 False\nn16_prefixe_5_6_witness None\nn16_prefixe_5_6_noeuds 7915261256\nn16_prefixe_5_7_score_max 113\nn16_prefixe_5_7_trouve_geq114 False\nn16_prefixe_5_7_witness None\nn16_prefixe_5_7_noeuds 7676383722\nn16_prefixe_5_8_score_max 113\nn16_prefixe_5_8_trouve_geq114 False\nn16_prefixe_5_8_witness None\nn16_prefixe_5_8_noeuds 7516319877\nn16_prefixe_5_9_score_max 113\nn16_prefixe_5_9_trouve_geq114 False\nn16_prefixe_5_9_witness None\nn16_prefixe_5_9_noeuds 7356271595\nexit 0\n",
+   "stdout_sha256": "f01f63f1205f84f3b1c8c05b2c20b1c6c24253ccf6ce724af228e3ea543ba673",
+   "original": {
+    "job": "job-0b266c57f07f469badd2",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 15652.695
+   },
+   "reproduction": {
+    "job": "job-4a16e304f7794a0195ec",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 19913.462,
+    "stdout_sha256": "f01f63f1205f84f3b1c8c05b2c20b1c6c24253ccf6ce724af228e3ea543ba673"
+   }
+  },
+  {
+   "lot": 18,
+   "prefixes": [
+    "[5,10]",
+    "[5,11]",
+    "[5,12]",
+    "[5,13]"
+   ],
+   "code_file": "codes/lot18.py",
+   "code_sha256": "0b73c694ef15c62124e6dde7641d9d51388d31bed0b9b982473533072b9144f6",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_5_10_score_max 113\nn16_prefixe_5_10_trouve_geq114 False\nn16_prefixe_5_10_witness None\nn16_prefixe_5_10_noeuds 7129266857\nn16_prefixe_5_11_score_max 113\nn16_prefixe_5_11_trouve_geq114 False\nn16_prefixe_5_11_witness None\nn16_prefixe_5_11_noeuds 6994615015\nn16_prefixe_5_12_score_max 113\nn16_prefixe_5_12_trouve_geq114 False\nn16_prefixe_5_12_witness None\nn16_prefixe_5_12_noeuds 7860574861\nn16_prefixe_5_13_score_max 113\nn16_prefixe_5_13_trouve_geq114 False\nn16_prefixe_5_13_witness None\nn16_prefixe_5_13_noeuds 7701033637\nexit 0\n",
+   "stdout_sha256": "7aca36db485bc89ace743ce895663e564d6de232572975873693833c1bc48744",
+   "original": {
+    "job": "job-1470a492e85e446f8f43",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 19051.157
+   },
+   "reproduction": {
+    "job": "job-3dd5bfd4876e4c109129",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 18910.063,
+    "stdout_sha256": "7aca36db485bc89ace743ce895663e564d6de232572975873693833c1bc48744"
+   }
+  },
+  {
+   "lot": 19,
+   "prefixes": [
+    "[5,14]",
+    "[5,15]",
+    "[5,16]",
+    "[6,1]"
+   ],
+   "code_file": "codes/lot19.py",
+   "code_sha256": "b4a70f9423924e30ad795c26c7563c4b4d540c47d518a38dc5c8bc6b7d6c3be1",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_5_14_score_max 113\nn16_prefixe_5_14_trouve_geq114 False\nn16_prefixe_5_14_witness None\nn16_prefixe_5_14_noeuds 7472848249\nn16_prefixe_5_15_score_max 113\nn16_prefixe_5_15_trouve_geq114 False\nn16_prefixe_5_15_witness None\nn16_prefixe_5_15_noeuds 7334043622\nn16_prefixe_5_16_score_max 113\nn16_prefixe_5_16_trouve_geq114 False\nn16_prefixe_5_16_witness None\nn16_prefixe_5_16_noeuds 7102025075\nn16_prefixe_6_1_score_max 113\nn16_prefixe_6_1_trouve_geq114 False\nn16_prefixe_6_1_witness None\nn16_prefixe_6_1_noeuds 8630405457\nexit 0\n",
+   "stdout_sha256": "177930d79276f07000e43c0c75dcd6e868c9009c3db5010a5f655fec419c8234",
+   "original": {
+    "job": "job-506cf80a59a7430bbb9d",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 15664.203
+   },
+   "reproduction": {
+    "job": "job-857f81a56a594ff39288",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 20259.331,
+    "stdout_sha256": "177930d79276f07000e43c0c75dcd6e868c9009c3db5010a5f655fec419c8234"
+   }
+  },
+  {
+   "lot": 20,
+   "prefixes": [
+    "[6,2]",
+    "[6,3]",
+    "[6,4]",
+    "[6,5]"
+   ],
+   "code_file": "codes/lot20.py",
+   "code_sha256": "da12481a4f7df7f78f30a9f1e5eb4bfb2211699a20cb12546cc3281e688c2a4e",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_6_2_score_max 113\nn16_prefixe_6_2_trouve_geq114 False\nn16_prefixe_6_2_witness None\nn16_prefixe_6_2_noeuds 8530985928\nn16_prefixe_6_3_score_max 113\nn16_prefixe_6_3_trouve_geq114 False\nn16_prefixe_6_3_witness None\nn16_prefixe_6_3_noeuds 8134089549\nn16_prefixe_6_4_score_max 113\nn16_prefixe_6_4_trouve_geq114 False\nn16_prefixe_6_4_witness None\nn16_prefixe_6_4_noeuds 8125500575\nn16_prefixe_6_5_score_max 113\nn16_prefixe_6_5_trouve_geq114 False\nn16_prefixe_6_5_witness None\nn16_prefixe_6_5_noeuds 7773962077\nexit 0\n",
+   "stdout_sha256": "54093903775145b88fd5ee195f6a7f0c1b9464b9108b975fdce0df5d9ab92d2f",
+   "original": {
+    "job": "job-2b9448984d9b4b2dad45",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 16629.58
+   },
+   "reproduction": {
+    "job": "job-c9d251ea2e794267a747",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 20968.065,
+    "stdout_sha256": "54093903775145b88fd5ee195f6a7f0c1b9464b9108b975fdce0df5d9ab92d2f"
+   }
+  },
+  {
+   "lot": 21,
+   "prefixes": [
+    "[6,7]",
+    "[6,8]",
+    "[6,9]",
+    "[6,10]",
+    "[6,7]",
+    "[6,8]",
+    "[6,9]",
+    "[6,10]"
+   ],
+   "code_file": "codes/lot21.py",
+   "code_sha256": "eaaf7d434e43eb6c4ad5cea78758d7f7c71cd2222d89c2004abebf302f154c1f",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_6_7_score_max 113\nn16_prefixe_6_7_trouve_geq114 False\nn16_prefixe_6_7_witness None\nn16_prefixe_6_7_noeuds 7326125032\nn16_prefixe_6_8_score_max 113\nn16_prefixe_6_8_trouve_geq114 False\nn16_prefixe_6_8_witness None\nn16_prefixe_6_8_noeuds 7230441601\nn16_prefixe_6_9_score_max 113\nn16_prefixe_6_9_trouve_geq114 False\nn16_prefixe_6_9_witness None\nn16_prefixe_6_9_noeuds 7026990023\nn16_prefixe_6_10_score_max 113\nn16_prefixe_6_10_trouve_geq114 False\nn16_prefixe_6_10_witness None\nn16_prefixe_6_10_noeuds 6919795887\nexit 0\n",
+   "stdout_sha256": "1274724a4bfedd5fedf16a3f7bd3b522cbf31c8ee4310e9db62f5e19fe931ab3",
+   "original": {
+    "job": "job-bc62cf55f1984f98975f",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 18341.113
+   },
+   "reproduction": {
+    "job": "job-40e27e3be6a44689990b",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 19770.993,
+    "stdout_sha256": "1274724a4bfedd5fedf16a3f7bd3b522cbf31c8ee4310e9db62f5e19fe931ab3"
+   }
+  },
+  {
+   "lot": 22,
+   "prefixes": [
+    "[6,11]",
+    "[6,12]",
+    "[6,13]",
+    "[6,14]"
+   ],
+   "code_file": "codes/lot22.py",
+   "code_sha256": "8ee3f81d6ee30780e1b484f08e1e946411e06f68f6ef6377bec5d84e171b740a",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_6_11_score_max 113\nn16_prefixe_6_11_trouve_geq114 False\nn16_prefixe_6_11_witness None\nn16_prefixe_6_11_noeuds 7737200315\nn16_prefixe_6_12_score_max 113\nn16_prefixe_6_12_trouve_geq114 False\nn16_prefixe_6_12_witness None\nn16_prefixe_6_12_noeuds 7578577946\nn16_prefixe_6_13_score_max 113\nn16_prefixe_6_13_trouve_geq114 False\nn16_prefixe_6_13_witness None\nn16_prefixe_6_13_noeuds 7346836534\nn16_prefixe_6_14_score_max 113\nn16_prefixe_6_14_trouve_geq114 False\nn16_prefixe_6_14_witness None\nn16_prefixe_6_14_noeuds 7240677158\nexit 0\n",
+   "stdout_sha256": "e1a543833876d0bc3813a3ef5b75b83eb2aa4c6b8ae26a24cb2f0bb3f9ecd908",
+   "original": {
+    "job": "job-bd775bc824a1467a9a53",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 20674.913
+   },
+   "reproduction": {
+    "job": "job-985c471fb332429b90ea",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 20655.005,
+    "stdout_sha256": "e1a543833876d0bc3813a3ef5b75b83eb2aa4c6b8ae26a24cb2f0bb3f9ecd908"
+   }
+  },
+  {
+   "lot": 23,
+   "prefixes": [
+    "[6,15]",
+    "[6,16]",
+    "[7,1]",
+    "[7,2]"
+   ],
+   "code_file": "codes/lot23.py",
+   "code_sha256": "46d4623cf03455decdc093c94dd2af780fd74259a878fd0dc0d8a9ab4faa2308",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_6_15_score_max 113\nn16_prefixe_6_15_trouve_geq114 False\nn16_prefixe_6_15_witness None\nn16_prefixe_6_15_noeuds 6993891156\nn16_prefixe_6_16_score_max 113\nn16_prefixe_6_16_trouve_geq114 False\nn16_prefixe_6_16_witness None\nn16_prefixe_6_16_noeuds 6899816948\nn16_prefixe_7_1_score_max 113\nn16_prefixe_7_1_trouve_geq114 False\nn16_prefixe_7_1_witness None\nn16_prefixe_7_1_noeuds 8253173500\nn16_prefixe_7_2_score_max 113\nn16_prefixe_7_2_trouve_geq114 False\nn16_prefixe_7_2_witness None\nn16_prefixe_7_2_noeuds 8062605910\nexit 0\n",
+   "stdout_sha256": "9525f25dacdb3877611d471431bdd2d679a50f5756e0b39a25d84dfb18e37568",
+   "original": {
+    "job": "job-3dce781ed7ae40c3a274",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 16628.626
+   },
+   "reproduction": {
+    "job": "job-de5b89da1de44a45a016",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 19883.245,
+    "stdout_sha256": "9525f25dacdb3877611d471431bdd2d679a50f5756e0b39a25d84dfb18e37568"
+   }
+  },
+  {
+   "lot": 24,
+   "prefixes": [
+    "[7,3]",
+    "[7,4]",
+    "[7,5]",
+    "[7,6]"
+   ],
+   "code_file": "codes/lot24.py",
+   "code_sha256": "d5fbc0647e8ae44948b08ab44a1de816bc44fd2622b70311a35a66719e6dbfb0",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_7_3_score_max 113\nn16_prefixe_7_3_trouve_geq114 False\nn16_prefixe_7_3_witness None\nn16_prefixe_7_3_noeuds 7791494115\nn16_prefixe_7_4_score_max 113\nn16_prefixe_7_4_trouve_geq114 False\nn16_prefixe_7_4_witness None\nn16_prefixe_7_4_noeuds 7638273429\nn16_prefixe_7_5_score_max 113\nn16_prefixe_7_5_trouve_geq114 False\nn16_prefixe_7_5_witness None\nn16_prefixe_7_5_noeuds 7375644143\nn16_prefixe_7_6_score_max 113\nn16_prefixe_7_6_trouve_geq114 False\nn16_prefixe_7_6_witness None\nn16_prefixe_7_6_noeuds 7195755335\nexit 0\n",
+   "stdout_sha256": "9aaff7b65cf91898ab519184b01dc67e6e16d75b5829d994ec348a52ec3afc85",
+   "original": {
+    "job": "job-3dab886770594e1bb7f8",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 16587.302
+   },
+   "reproduction": {
+    "job": "job-dcb3ebca7bbd448fb18c",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 19038.19,
+    "stdout_sha256": "9aaff7b65cf91898ab519184b01dc67e6e16d75b5829d994ec348a52ec3afc85"
+   }
+  },
+  {
+   "lot": 25,
+   "prefixes": [
+    "[7,8]",
+    "[7,9]",
+    "[7,10]",
+    "[7,11]"
+   ],
+   "code_file": "codes/lot25.py",
+   "code_sha256": "1fb5e6a835da05f2fc1c7b624a01f86238a74745ee76cca2c98afc2d1f543afe",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_7_8_score_max 113\nn16_prefixe_7_8_trouve_geq114 False\nn16_prefixe_7_8_witness None\nn16_prefixe_7_8_noeuds 6853124558\nn16_prefixe_7_9_score_max 113\nn16_prefixe_7_9_trouve_geq114 False\nn16_prefixe_7_9_witness None\nn16_prefixe_7_9_noeuds 6719093226\nn16_prefixe_7_10_score_max 113\nn16_prefixe_7_10_trouve_geq114 False\nn16_prefixe_7_10_witness None\nn16_prefixe_7_10_noeuds 7577137966\nn16_prefixe_7_11_score_max 113\nn16_prefixe_7_11_trouve_geq114 False\nn16_prefixe_7_11_witness None\nn16_prefixe_7_11_noeuds 7423450516\nexit 0\n",
+   "stdout_sha256": "09198ad7fd4b2dc5a64d32b90f51539de3562096ecadf601c6028da12126ebba",
+   "original": {
+    "job": "job-b33866871a0341d597f9",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 18755.723
+   },
+   "reproduction": {
+    "job": "job-ef52fd38639c44708461",
+    "agent": "agent-C",
+    "host": "host-2",
+    "duration_s": 15944.781,
+    "stdout_sha256": "09198ad7fd4b2dc5a64d32b90f51539de3562096ecadf601c6028da12126ebba"
+   }
+  },
+  {
+   "lot": 26,
+   "prefixes": [
+    "[7,12]",
+    "[7,13]",
+    "[7,14]",
+    "[7,15]"
+   ],
+   "code_file": "codes/lot26.py",
+   "code_sha256": "438f44d6ced204b454f218e64fc6fc634550cb9db7ae8918003f324fd87d752b",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_7_12_score_max 113\nn16_prefixe_7_12_trouve_geq114 False\nn16_prefixe_7_12_witness None\nn16_prefixe_7_12_noeuds 7202926487\nn16_prefixe_7_13_score_max 113\nn16_prefixe_7_13_trouve_geq114 False\nn16_prefixe_7_13_witness None\nn16_prefixe_7_13_noeuds 7077948649\nn16_prefixe_7_14_score_max 113\nn16_prefixe_7_14_trouve_geq114 False\nn16_prefixe_7_14_witness None\nn16_prefixe_7_14_noeuds 6846162936\nn16_prefixe_7_15_score_max 113\nn16_prefixe_7_15_trouve_geq114 False\nn16_prefixe_7_15_witness None\nn16_prefixe_7_15_noeuds 6743928432\nexit 0\n",
+   "stdout_sha256": "c7e4622e148aabb9a2d78983a6d42e543e60251ed3c35b0ed315cdeb78b196d5",
+   "original": {
+    "job": "job-27f65ab6efec473ea930",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 15504.53
+   },
+   "reproduction": {
+    "job": "job-c84eb17d342043c1ba9f",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 17764.821,
+    "stdout_sha256": "c7e4622e148aabb9a2d78983a6d42e543e60251ed3c35b0ed315cdeb78b196d5"
+   }
+  },
+  {
+   "lot": 27,
+   "prefixes": [
+    "[7,16]",
+    "[8,1]",
+    "[8,2]",
+    "[8,3]"
+   ],
+   "code_file": "codes/lot27.py",
+   "code_sha256": "bfbc923596142fc3fa72033d749f6d4a961d24678560087cee83c7722b70b651",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_7_16_score_max 113\nn16_prefixe_7_16_trouve_geq114 False\nn16_prefixe_7_16_witness None\nn16_prefixe_7_16_noeuds 6552852317\nn16_prefixe_8_1_score_max 113\nn16_prefixe_8_1_trouve_geq114 False\nn16_prefixe_8_1_witness None\nn16_prefixe_8_1_noeuds 7797792923\nn16_prefixe_8_2_score_max 113\nn16_prefixe_8_2_trouve_geq114 False\nn16_prefixe_8_2_witness None\nn16_prefixe_8_2_noeuds 7706846435\nn16_prefixe_8_3_score_max 113\nn16_prefixe_8_3_trouve_geq114 False\nn16_prefixe_8_3_witness None\nn16_prefixe_8_3_noeuds 7453000129\nexit 0\n",
+   "stdout_sha256": "ae2fa5f18a0ab10dad4a0f63614c7c610f2ceeac2000db86bb3f11f23c9280ac",
+   "original": {
+    "job": "job-c339a89139fe4cf39c43",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 18834.22
+   },
+   "reproduction": {
+    "job": "job-6b7dfe1ba759447f90b3",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 20384.686,
+    "stdout_sha256": "ae2fa5f18a0ab10dad4a0f63614c7c610f2ceeac2000db86bb3f11f23c9280ac"
+   }
+  },
+  {
+   "lot": 28,
+   "prefixes": [
+    "[8,4]",
+    "[8,5]",
+    "[8,6]",
+    "[8,7]"
+   ],
+   "code_file": "codes/lot28.py",
+   "code_sha256": "d841c8d8cafcbefe19fa395dac718173b4d4f35c38a95b64897593621c7f7be7",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_8_4_score_max 113\nn16_prefixe_8_4_trouve_geq114 False\nn16_prefixe_8_4_witness None\nn16_prefixe_8_4_noeuds 7269530107\nn16_prefixe_8_5_score_max 113\nn16_prefixe_8_5_trouve_geq114 False\nn16_prefixe_8_5_witness None\nn16_prefixe_8_5_noeuds 7074556444\nn16_prefixe_8_6_score_max 113\nn16_prefixe_8_6_trouve_geq114 False\nn16_prefixe_8_6_witness None\nn16_prefixe_8_6_noeuds 6950267605\nn16_prefixe_8_7_score_max 113\nn16_prefixe_8_7_trouve_geq114 False\nn16_prefixe_8_7_witness None\nn16_prefixe_8_7_noeuds 6738568189\nexit 0\n",
+   "stdout_sha256": "ab0aa70b52a8154f80387ed89cf94c739022bc5a306b018a6316ce2ebc40e9aa",
+   "original": {
+    "job": "job-c20d967f25854979b743",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 15669.837
+   },
+   "reproduction": {
+    "job": "job-5a789ac86a0a4dfeb7ed",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 18697.123,
+    "stdout_sha256": "ab0aa70b52a8154f80387ed89cf94c739022bc5a306b018a6316ce2ebc40e9aa"
+   }
+  },
+  {
+   "lot": 29,
+   "prefixes": [
+    "[8,9]",
+    "[8,10]",
+    "[8,11]",
+    "[8,12]"
+   ],
+   "code_file": "codes/lot29.py",
+   "code_sha256": "c6e497ee140097522c6b7aedcdb92683e76dbec24920a0fcf0abdd5b76ab9899",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_8_9_score_max 113\nn16_prefixe_8_9_trouve_geq114 False\nn16_prefixe_8_9_witness None\nn16_prefixe_8_9_noeuds 7419418949\nn16_prefixe_8_10_score_max 113\nn16_prefixe_8_10_trouve_geq114 False\nn16_prefixe_8_10_witness None\nn16_prefixe_8_10_noeuds 7314572924\nn16_prefixe_8_11_score_max 113\nn16_prefixe_8_11_trouve_geq114 False\nn16_prefixe_8_11_witness None\nn16_prefixe_8_11_noeuds 7079834433\nn16_prefixe_8_12_score_max 113\nn16_prefixe_8_12_trouve_geq114 False\nn16_prefixe_8_12_witness None\nn16_prefixe_8_12_noeuds 6983003140\nexit 0\n",
+   "stdout_sha256": "bd376ffe0b44531aad22f35226203f3cff05f6e8b549540a78a937ad556877cc",
+   "original": {
+    "job": "job-0bca03ffa0694429bf6c",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 19552.026
+   },
+   "reproduction": {
+    "job": "job-0388e0a7fa504c49b3a2",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 20675.347,
+    "stdout_sha256": "bd376ffe0b44531aad22f35226203f3cff05f6e8b549540a78a937ad556877cc"
+   }
+  },
+  {
+   "lot": 30,
+   "prefixes": [
+    "[8,13]",
+    "[8,14]",
+    "[8,15]",
+    "[8,16]",
+    "[8,13]",
+    "[8,14]",
+    "[8,15]",
+    "[8,16]"
+   ],
+   "code_file": "codes/lot30.py",
+   "code_sha256": "14e816973c47c2e49aac96331818d9783c9558f2887cc225f4465f6d30424005",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_8_13_score_max 113\nn16_prefixe_8_13_trouve_geq114 False\nn16_prefixe_8_13_witness None\nn16_prefixe_8_13_noeuds 6746093778\nn16_prefixe_8_14_score_max 113\nn16_prefixe_8_14_trouve_geq114 False\nn16_prefixe_8_14_witness None\nn16_prefixe_8_14_noeuds 6666379021\nn16_prefixe_8_15_score_max 113\nn16_prefixe_8_15_trouve_geq114 False\nn16_prefixe_8_15_witness None\nn16_prefixe_8_15_noeuds 6454272197\nn16_prefixe_8_16_score_max 113\nn16_prefixe_8_16_trouve_geq114 False\nn16_prefixe_8_16_witness None\nn16_prefixe_8_16_noeuds 6351038058\nexit 0\n",
+   "stdout_sha256": "fa95366ea0c59b77dda373be915a16ecdcddcb1c26e57eab66cfa0a6050cf2a6",
+   "original": {
+    "job": "job-80c7477c6d62469780ac",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 17125.315
+   },
+   "reproduction": {
+    "job": "job-b1b202a5bc54441199f4",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 17806.425,
+    "stdout_sha256": "fa95366ea0c59b77dda373be915a16ecdcddcb1c26e57eab66cfa0a6050cf2a6"
+   }
+  },
+  {
+   "lot": 31,
+   "prefixes": [
+    "[9,1]",
+    "[9,2]",
+    "[9,3]",
+    "[9,4]",
+    "[9,1]",
+    "[9,2]",
+    "[9,3]",
+    "[9,4]"
+   ],
+   "code_file": "codes/lot31.py",
+   "code_sha256": "7302e19b670f536c5ea9440dc6859bd50616a5ab11a85010a129243d90fd7ca9",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_9_1_score_max 113\nn16_prefixe_9_1_trouve_geq114 False\nn16_prefixe_9_1_witness None\nn16_prefixe_9_1_noeuds 7516235973\nn16_prefixe_9_2_score_max 113\nn16_prefixe_9_2_trouve_geq114 False\nn16_prefixe_9_2_witness None\nn16_prefixe_9_2_noeuds 7359566339\nn16_prefixe_9_3_score_max 113\nn16_prefixe_9_3_trouve_geq114 False\nn16_prefixe_9_3_witness None\nn16_prefixe_9_3_noeuds 7193940215\nn16_prefixe_9_4_score_max 113\nn16_prefixe_9_4_trouve_geq114 False\nn16_prefixe_9_4_witness None\nn16_prefixe_9_4_noeuds 6968972803\nexit 0\n",
+   "stdout_sha256": "d4643dd348a07098bff6c1b9f141409f27ef5b6a7e84235aef1e3b3f42e54a63",
+   "original": {
+    "job": "job-069f56d1780a419fb6e9",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 16443.378
+   },
+   "reproduction": {
+    "job": "job-5c9e3a40a3184bc5866a",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 18914.121,
+    "stdout_sha256": "d4643dd348a07098bff6c1b9f141409f27ef5b6a7e84235aef1e3b3f42e54a63"
+   }
+  },
+  {
+   "lot": 32,
+   "prefixes": [
+    "[9,5]",
+    "[9,6]",
+    "[9,7]",
+    "[9,8]"
+   ],
+   "code_file": "codes/lot32.py",
+   "code_sha256": "21dc494bc609c36597ee4d01c4eb9aa40ba180a062ec8755ef6e4faa77cb7f97",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_9_5_score_max 113\nn16_prefixe_9_5_trouve_geq114 False\nn16_prefixe_9_5_witness None\nn16_prefixe_9_5_noeuds 6822829218\nn16_prefixe_9_6_score_max 113\nn16_prefixe_9_6_trouve_geq114 False\nn16_prefixe_9_6_witness None\nn16_prefixe_9_6_noeuds 6658288978\nn16_prefixe_9_7_score_max 113\nn16_prefixe_9_7_trouve_geq114 False\nn16_prefixe_9_7_witness None\nn16_prefixe_9_7_noeuds 6505517943\nn16_prefixe_9_8_score_max 113\nn16_prefixe_9_8_trouve_geq114 False\nn16_prefixe_9_8_witness None\nn16_prefixe_9_8_noeuds 7341927363\nexit 0\n",
+   "stdout_sha256": "911de9059d4a70e5e9a985f9f2a776e49948e19b5e5ce8c77c899b619de4d1e8",
+   "original": {
+    "job": "job-bc86b438f9a245049f49",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 17841.451
+   },
+   "reproduction": {
+    "job": "job-cdce5a066f67426296bd",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 18180.71,
+    "stdout_sha256": "911de9059d4a70e5e9a985f9f2a776e49948e19b5e5ce8c77c899b619de4d1e8"
+   }
+  },
+  {
+   "lot": 33,
+   "prefixes": [
+    "[9,10]",
+    "[9,11]",
+    "[9,12]",
+    "[9,13]"
+   ],
+   "code_file": "codes/lot33.py",
+   "code_sha256": "1296828ccc329f3f5f5fb0b8be0b73256a045d879d332fa81a1b3dad24f878d4",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_9_10_score_max 113\nn16_prefixe_9_10_trouve_geq114 False\nn16_prefixe_9_10_witness None\nn16_prefixe_9_10_noeuds 6976528186\nn16_prefixe_9_11_score_max 113\nn16_prefixe_9_11_trouve_geq114 False\nn16_prefixe_9_11_witness None\nn16_prefixe_9_11_noeuds 6853595803\nn16_prefixe_9_12_score_max 113\nn16_prefixe_9_12_trouve_geq114 False\nn16_prefixe_9_12_witness None\nn16_prefixe_9_12_noeuds 6654097608\nn16_prefixe_9_13_score_max 113\nn16_prefixe_9_13_trouve_geq114 False\nn16_prefixe_9_13_witness None\nn16_prefixe_9_13_noeuds 6544905400\nexit 0\n",
+   "stdout_sha256": "ddc0607b6c4cc054042e638e98f768f2c2ce80c4e7d86175d5ded5e1437eaf02",
+   "original": {
+    "job": "job-7ae6bced77a54afb9012",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 17805.563
+   },
+   "reproduction": {
+    "job": "job-a008742fd6214813adfc",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 17357.767,
+    "stdout_sha256": "ddc0607b6c4cc054042e638e98f768f2c2ce80c4e7d86175d5ded5e1437eaf02"
+   }
+  },
+  {
+   "lot": 34,
+   "prefixes": [
+    "[9,14]",
+    "[9,15]",
+    "[9,16]",
+    "[10,1]"
+   ],
+   "code_file": "codes/lot34.py",
+   "code_sha256": "fd0bdae11ee9fe6bb27051140abeb58775e53720e47e37d055b2784dcfb6ce67",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_9_14_score_max 113\nn16_prefixe_9_14_trouve_geq114 False\nn16_prefixe_9_14_witness None\nn16_prefixe_9_14_noeuds 6368100073\nn16_prefixe_9_15_score_max 113\nn16_prefixe_9_15_trouve_geq114 False\nn16_prefixe_9_15_witness None\nn16_prefixe_9_15_noeuds 6259477090\nn16_prefixe_9_16_score_max 113\nn16_prefixe_9_16_trouve_geq114 False\nn16_prefixe_9_16_witness None\nn16_prefixe_9_16_noeuds 6097577734\nn16_prefixe_10_1_score_max 113\nn16_prefixe_10_1_trouve_geq114 False\nn16_prefixe_10_1_witness None\nn16_prefixe_10_1_noeuds 7143852202\nexit 0\n",
+   "stdout_sha256": "2cc03e9e9a9c9a46b19741d69d549dfc85803dd766a8a3900b8e0f482094c906",
+   "original": {
+    "job": "job-2504065c8a3d4d6c9c29",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 17067.841
+   },
+   "reproduction": {
+    "job": "job-4e22ab629ab34b01b17f",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 16817.365,
+    "stdout_sha256": "2cc03e9e9a9c9a46b19741d69d549dfc85803dd766a8a3900b8e0f482094c906"
+   }
+  },
+  {
+   "lot": 35,
+   "prefixes": [
+    "[10,2]",
+    "[10,3]",
+    "[10,4]",
+    "[10,5]",
+    "[10,2]",
+    "[10,3]",
+    "[10,4]",
+    "[10,5]"
+   ],
+   "code_file": "codes/lot35.py",
+   "code_sha256": "02266cfbc33bec010da287810682a8e398acb2b0d17571c3901222b5fd9ed92a",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_10_2_score_max 113\nn16_prefixe_10_2_trouve_geq114 False\nn16_prefixe_10_2_witness None\nn16_prefixe_10_2_noeuds 7049908676\nn16_prefixe_10_3_score_max 113\nn16_prefixe_10_3_trouve_geq114 False\nn16_prefixe_10_3_witness None\nn16_prefixe_10_3_noeuds 6827909988\nn16_prefixe_10_4_score_max 113\nn16_prefixe_10_4_trouve_geq114 False\nn16_prefixe_10_4_witness None\nn16_prefixe_10_4_noeuds 6695602324\nn16_prefixe_10_5_score_max 113\nn16_prefixe_10_5_trouve_geq114 False\nn16_prefixe_10_5_witness None\nn16_prefixe_10_5_noeuds 6419288824\nexit 0\n",
+   "stdout_sha256": "485645bcf1929b6c69832e6f2e497c02ce943f1aaf6e48df2c11a32336c8b914",
+   "original": {
+    "job": "job-7b08593c43574de8b63a",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 18186.44
+   },
+   "reproduction": {
+    "job": "job-a1eb787c479f4128b514",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 17651.94,
+    "stdout_sha256": "485645bcf1929b6c69832e6f2e497c02ce943f1aaf6e48df2c11a32336c8b914"
+   }
+  },
+  {
+   "lot": 36,
+   "prefixes": [
+    "[10,6]",
+    "[10,7]",
+    "[10,8]",
+    "[10,9]"
+   ],
+   "code_file": "codes/lot36.py",
+   "code_sha256": "fc34be8d3555121b226b6c47854c793befb34f83f6396cdee5892343396e216c",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_10_6_score_max 113\nn16_prefixe_10_6_trouve_geq114 False\nn16_prefixe_10_6_witness None\nn16_prefixe_10_6_noeuds 6399840219\nn16_prefixe_10_7_score_max 113\nn16_prefixe_10_7_trouve_geq114 False\nn16_prefixe_10_7_witness None\nn16_prefixe_10_7_noeuds 7174789532\nn16_prefixe_10_8_score_max 113\nn16_prefixe_10_8_trouve_geq114 False\nn16_prefixe_10_8_witness None\nn16_prefixe_10_8_noeuds 7066720363\nn16_prefixe_10_9_score_max 113\nn16_prefixe_10_9_trouve_geq114 False\nn16_prefixe_10_9_witness None\nn16_prefixe_10_9_noeuds 6855180864\nexit 0\n",
+   "stdout_sha256": "5fe705b77080b790e288e8a0c111e3f6015f07d68f1d0b5e50137cb260033e48",
+   "original": {
+    "job": "job-1dd4aeeeb5a7405d8c05",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 18310.589
+   },
+   "reproduction": {
+    "job": "job-631762226e8049d091cd",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 18026.172,
+    "stdout_sha256": "5fe705b77080b790e288e8a0c111e3f6015f07d68f1d0b5e50137cb260033e48"
+   }
+  },
+  {
+   "lot": 37,
+   "prefixes": [
+    "[10,11]",
+    "[10,12]",
+    "[10,13]",
+    "[10,14]"
+   ],
+   "code_file": "codes/lot37.py",
+   "code_sha256": "e3917592fcccdacfbc252137091a8075ad71df2e86ad5988b0b4f0bb0870b897",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_10_11_score_max 113\nn16_prefixe_10_11_trouve_geq114 False\nn16_prefixe_10_11_witness None\nn16_prefixe_10_11_noeuds 6492809997\nn16_prefixe_10_12_score_max 113\nn16_prefixe_10_12_trouve_geq114 False\nn16_prefixe_10_12_witness None\nn16_prefixe_10_12_noeuds 6418988952\nn16_prefixe_10_13_score_max 113\nn16_prefixe_10_13_trouve_geq114 False\nn16_prefixe_10_13_witness None\nn16_prefixe_10_13_noeuds 6231386909\nn16_prefixe_10_14_score_max 113\nn16_prefixe_10_14_trouve_geq114 False\nn16_prefixe_10_14_witness None\nn16_prefixe_10_14_noeuds 6144968375\nexit 0\n",
+   "stdout_sha256": "107f5f03f5c3d10ed4ec985193c6fa0c5ea63682e09700d8b87a2fad195ffc14",
+   "original": {
+    "job": "job-6d7f925d5d4b440db539",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 17274.579
+   },
+   "reproduction": {
+    "job": "job-bd2a731083fc4bf0ab5c",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 18076.547,
+    "stdout_sha256": "107f5f03f5c3d10ed4ec985193c6fa0c5ea63682e09700d8b87a2fad195ffc14"
+   }
+  },
+  {
+   "lot": 38,
+   "prefixes": [
+    "[10,15]",
+    "[10,16]",
+    "[11,1]",
+    "[11,2]"
+   ],
+   "code_file": "codes/lot38.py",
+   "code_sha256": "a397ed422c30b04ffeac0fdeec3b902a8f382e08fb13de6284f0ec4d589bee98",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_10_15_score_max 113\nn16_prefixe_10_15_trouve_geq114 False\nn16_prefixe_10_15_witness None\nn16_prefixe_10_15_noeuds 5969072892\nn16_prefixe_10_16_score_max 113\nn16_prefixe_10_16_trouve_geq114 False\nn16_prefixe_10_16_witness None\nn16_prefixe_10_16_noeuds 5904759164\nn16_prefixe_11_1_score_max 113\nn16_prefixe_11_1_trouve_geq114 False\nn16_prefixe_11_1_witness None\nn16_prefixe_11_1_noeuds 6779492241\nn16_prefixe_11_2_score_max 113\nn16_prefixe_11_2_trouve_geq114 False\nn16_prefixe_11_2_witness None\nn16_prefixe_11_2_noeuds 6651109824\nexit 0\n",
+   "stdout_sha256": "533f46fa02fe8f6358f3fa7e5dfae81f6a74b4e75e5f2446a43ac04d99ef17c4",
+   "original": {
+    "job": "job-9459d2212a344ac2a6ef",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 17736.716
+   },
+   "reproduction": {
+    "job": "job-23f9baa2ccd24fe7b2f8",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 16356.317,
+    "stdout_sha256": "533f46fa02fe8f6358f3fa7e5dfae81f6a74b4e75e5f2446a43ac04d99ef17c4"
+   }
+  },
+  {
+   "lot": 39,
+   "prefixes": [
+    "[11,3]",
+    "[11,4]",
+    "[11,5]",
+    "[11,6]"
+   ],
+   "code_file": "codes/lot39.py",
+   "code_sha256": "f43551bfc3890ecff7ef6e8c6fbafc6c7d6b8fc2faeb118f98cb06f888b73c54",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_11_3_score_max 113\nn16_prefixe_11_3_trouve_geq114 False\nn16_prefixe_11_3_witness None\nn16_prefixe_11_3_noeuds 6431324165\nn16_prefixe_11_4_score_max 113\nn16_prefixe_11_4_trouve_geq114 False\nn16_prefixe_11_4_witness None\nn16_prefixe_11_4_noeuds 6301793360\nn16_prefixe_11_5_score_max 113\nn16_prefixe_11_5_trouve_geq114 False\nn16_prefixe_11_5_witness None\nn16_prefixe_11_5_noeuds 6167977223\nn16_prefixe_11_6_score_max 113\nn16_prefixe_11_6_trouve_geq114 False\nn16_prefixe_11_6_witness None\nn16_prefixe_11_6_noeuds 6982435284\nexit 0\n",
+   "stdout_sha256": "1889676e830305e1fbfbade96fb1c15813567fe4db9674cfe8e77c981c45b1a3",
+   "original": {
+    "job": "job-28e262ab90114f86b61e",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 17338.618
+   },
+   "reproduction": {
+    "job": "job-a60f2f3ef1ce47ee848f",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 17373.647,
+    "stdout_sha256": "1889676e830305e1fbfbade96fb1c15813567fe4db9674cfe8e77c981c45b1a3"
+   }
+  },
+  {
+   "lot": 40,
+   "prefixes": [
+    "[11,7]",
+    "[11,8]",
+    "[11,9]",
+    "[11,10]"
+   ],
+   "code_file": "codes/lot40.py",
+   "code_sha256": "9f0f7eceb1f4a9adf55f9fcb9e01988782b680260b71a65589e9d069885c5e00",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_11_7_score_max 113\nn16_prefixe_11_7_trouve_geq114 False\nn16_prefixe_11_7_witness None\nn16_prefixe_11_7_noeuds 6843242721\nn16_prefixe_11_8_score_max 113\nn16_prefixe_11_8_trouve_geq114 False\nn16_prefixe_11_8_witness None\nn16_prefixe_11_8_noeuds 6663152385\nn16_prefixe_11_9_score_max 113\nn16_prefixe_11_9_trouve_geq114 False\nn16_prefixe_11_9_witness None\nn16_prefixe_11_9_noeuds 6553142906\nn16_prefixe_11_10_score_max 113\nn16_prefixe_11_10_trouve_geq114 False\nn16_prefixe_11_10_witness None\nn16_prefixe_11_10_noeuds 6361152838\nexit 0\n",
+   "stdout_sha256": "bac4fffa1030ddef2965f4260c4ccebedb437e914012c2bc478be9e6fd74e033",
+   "original": {
+    "job": "job-c9fe0d1222364fe6a85c",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 17179.256
+   },
+   "reproduction": {
+    "job": "job-ea40d50924fd40bda1ef",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 16340.749,
+    "stdout_sha256": "bac4fffa1030ddef2965f4260c4ccebedb437e914012c2bc478be9e6fd74e033"
+   }
+  },
+  {
+   "lot": 41,
+   "prefixes": [
+    "[11,12]",
+    "[11,13]",
+    "[11,14]",
+    "[11,15]",
+    "[11,12]",
+    "[11,13]",
+    "[11,14]",
+    "[11,15]"
+   ],
+   "code_file": "codes/lot41.py",
+   "code_sha256": "477a3def9ef689c6aa2ec8260569329b359dcd3c490c6a3b68048c4c47422410",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_11_12_score_max 113\nn16_prefixe_11_12_trouve_geq114 False\nn16_prefixe_11_12_witness None\nn16_prefixe_11_12_noeuds 6048351108\nn16_prefixe_11_13_score_max 113\nn16_prefixe_11_13_trouve_geq114 False\nn16_prefixe_11_13_witness None\nn16_prefixe_11_13_noeuds 5957144694\nn16_prefixe_11_14_score_max 113\nn16_prefixe_11_14_trouve_geq114 False\nn16_prefixe_11_14_witness None\nn16_prefixe_11_14_noeuds 5805434900\nn16_prefixe_11_15_score_max 113\nn16_prefixe_11_15_trouve_geq114 False\nn16_prefixe_11_15_witness None\nn16_prefixe_11_15_noeuds 5724537075\nexit 0\n",
+   "stdout_sha256": "d5adcd1881f7674154ff6d1355dff4585765db3f2db085fe714ec81ca838025b",
+   "original": {
+    "job": "job-3fecfb85b1dd4e6bb256",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 16153.096
+   },
+   "reproduction": {
+    "job": "job-dc79c6a8e9884490b9f8",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 15203.261,
+    "stdout_sha256": "d5adcd1881f7674154ff6d1355dff4585765db3f2db085fe714ec81ca838025b"
+   }
+  },
+  {
+   "lot": 42,
+   "prefixes": [
+    "[11,16]",
+    "[12,1]",
+    "[12,2]",
+    "[12,3]"
+   ],
+   "code_file": "codes/lot42.py",
+   "code_sha256": "58fef6a6d202fc59167befcde8f23d827890952e315bb129d7d3708b984765dc",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_11_16_score_max 113\nn16_prefixe_11_16_trouve_geq114 False\nn16_prefixe_11_16_witness None\nn16_prefixe_11_16_noeuds 5573426590\nn16_prefixe_12_1_score_max 113\nn16_prefixe_12_1_trouve_geq114 False\nn16_prefixe_12_1_witness None\nn16_prefixe_12_1_noeuds 6423055045\nn16_prefixe_12_2_score_max 113\nn16_prefixe_12_2_trouve_geq114 False\nn16_prefixe_12_2_witness None\nn16_prefixe_12_2_noeuds 6355291685\nn16_prefixe_12_3_score_max 113\nn16_prefixe_12_3_trouve_geq114 False\nn16_prefixe_12_3_witness None\nn16_prefixe_12_3_noeuds 6097992205\nexit 0\n",
+   "stdout_sha256": "63768c4780c448bc92593cbee504017729ed0a56a6408eb2f9417a62da949631",
+   "original": {
+    "job": "job-e62c04599cc34fbb9562",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 16391.711
+   },
+   "reproduction": {
+    "job": "job-c5766aa003244cd48b07",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 16491.454,
+    "stdout_sha256": "63768c4780c448bc92593cbee504017729ed0a56a6408eb2f9417a62da949631"
+   }
+  },
+  {
+   "lot": 43,
+   "prefixes": [
+    "[12,4]",
+    "[12,5]",
+    "[12,6]",
+    "[12,7]"
+   ],
+   "code_file": "codes/lot43.py",
+   "code_sha256": "910af27dbbfdefa3b9c738573b10267c31952877275077bc197a142865eb8f31",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_12_4_score_max 113\nn16_prefixe_12_4_trouve_geq114 False\nn16_prefixe_12_4_witness None\nn16_prefixe_12_4_noeuds 6045833183\nn16_prefixe_12_5_score_max 113\nn16_prefixe_12_5_trouve_geq114 False\nn16_prefixe_12_5_witness None\nn16_prefixe_12_5_noeuds 6771359830\nn16_prefixe_12_6_score_max 113\nn16_prefixe_12_6_trouve_geq114 False\nn16_prefixe_12_6_witness None\nn16_prefixe_12_6_noeuds 6615543102\nn16_prefixe_12_7_score_max 113\nn16_prefixe_12_7_trouve_geq114 False\nn16_prefixe_12_7_witness None\nn16_prefixe_12_7_noeuds 6475084038\nexit 0\n",
+   "stdout_sha256": "752c802ef8dc2b9bdb0ee86d78a1ef0d272cdbe4eebb99b71d4c8135892294a5",
+   "original": {
+    "job": "job-ba21682488824a8cbbf8",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 16959.276
+   },
+   "reproduction": {
+    "job": "job-00c802873dd946c9a28a",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 17082.957,
+    "stdout_sha256": "752c802ef8dc2b9bdb0ee86d78a1ef0d272cdbe4eebb99b71d4c8135892294a5"
+   }
+  },
+  {
+   "lot": 44,
+   "prefixes": [
+    "[12,8]",
+    "[12,9]",
+    "[12,10]",
+    "[12,11]"
+   ],
+   "code_file": "codes/lot44.py",
+   "code_sha256": "e5d6bedb669398c9268487243fe792f7460e7eec6888dd26e7eb0b248b6f25a7",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_12_8_score_max 113\nn16_prefixe_12_8_trouve_geq114 False\nn16_prefixe_12_8_witness None\nn16_prefixe_12_8_noeuds 6402376878\nn16_prefixe_12_9_score_max 113\nn16_prefixe_12_9_trouve_geq114 False\nn16_prefixe_12_9_witness None\nn16_prefixe_12_9_noeuds 6204021160\nn16_prefixe_12_10_score_max 113\nn16_prefixe_12_10_trouve_geq114 False\nn16_prefixe_12_10_witness None\nn16_prefixe_12_10_noeuds 6126429129\nn16_prefixe_12_11_score_max 113\nn16_prefixe_12_11_trouve_geq114 False\nn16_prefixe_12_11_witness None\nn16_prefixe_12_11_noeuds 5934604121\nexit 0\n",
+   "stdout_sha256": "b01118972be109ddfb7246f92ac4fe31f4fcff29b08ce56d62891a8a49672153",
+   "original": {
+    "job": "job-6c6a2f32cee24d1a8a58",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 15931.334
+   },
+   "reproduction": {
+    "job": "job-df986b9c202a4ddb9595",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 17311.598,
+    "stdout_sha256": "b01118972be109ddfb7246f92ac4fe31f4fcff29b08ce56d62891a8a49672153"
+   }
+  },
+  {
+   "lot": 45,
+   "prefixes": [
+    "[12,13]",
+    "[12,14]",
+    "[12,15]",
+    "[12,16]"
+   ],
+   "code_file": "codes/lot45.py",
+   "code_sha256": "cbf37e23e48334bfc140ea37d1e485f160c06ac4993eac8cebffd21c227f78b6",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_12_13_score_max 113\nn16_prefixe_12_13_trouve_geq114 False\nn16_prefixe_12_13_witness None\nn16_prefixe_12_13_noeuds 5654076610\nn16_prefixe_12_14_score_max 113\nn16_prefixe_12_14_trouve_geq114 False\nn16_prefixe_12_14_witness None\nn16_prefixe_12_14_noeuds 5602690674\nn16_prefixe_12_15_score_max 113\nn16_prefixe_12_15_trouve_geq114 False\nn16_prefixe_12_15_witness None\nn16_prefixe_12_15_noeuds 5430894275\nn16_prefixe_12_16_score_max 113\nn16_prefixe_12_16_trouve_geq114 False\nn16_prefixe_12_16_witness None\nn16_prefixe_12_16_noeuds 5388208151\nexit 0\n",
+   "stdout_sha256": "0a1c947dbaf3fa7a5bdb2c72c61175952e83139dffb4114993ea4359082d7bcc",
+   "original": {
+    "job": "job-f5961380de754603b7f0",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 14735.337
+   },
+   "reproduction": {
+    "job": "job-9e5ee5efe9c34620999a",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 13766.757,
+    "stdout_sha256": "0a1c947dbaf3fa7a5bdb2c72c61175952e83139dffb4114993ea4359082d7bcc"
+   }
+  },
+  {
+   "lot": 46,
+   "prefixes": [
+    "[13,1]",
+    "[13,2]",
+    "[13,3]",
+    "[13,4]",
+    "[13,1]",
+    "[13,2]",
+    "[13,3]",
+    "[13,4]"
+   ],
+   "code_file": "codes/lot46.py",
+   "code_sha256": "6a87a2cbf1c696d5c100daf15f90e42dda5f6de289fa3faabf1c108ff3de73a5",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_13_1_score_max 113\nn16_prefixe_13_1_trouve_geq114 False\nn16_prefixe_13_1_witness None\nn16_prefixe_13_1_noeuds 6088937072\nn16_prefixe_13_2_score_max 113\nn16_prefixe_13_2_trouve_geq114 False\nn16_prefixe_13_2_witness None\nn16_prefixe_13_2_noeuds 5922915271\nn16_prefixe_13_3_score_max 113\nn16_prefixe_13_3_trouve_geq114 False\nn16_prefixe_13_3_witness None\nn16_prefixe_13_3_noeuds 5791974623\nn16_prefixe_13_4_score_max 113\nn16_prefixe_13_4_trouve_geq114 False\nn16_prefixe_13_4_witness None\nn16_prefixe_13_4_noeuds 6580557592\nexit 0\n",
+   "stdout_sha256": "772570003682a9fd07450bce8f86cda8a337719d3698789aa2cb6d05066bb17e",
+   "original": {
+    "job": "job-e654e64b01cb4620b9d8",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 16421.452
+   },
+   "reproduction": {
+    "job": "job-f3ceb0a498614001ab4d",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 16363.291,
+    "stdout_sha256": "772570003682a9fd07450bce8f86cda8a337719d3698789aa2cb6d05066bb17e"
+   }
+  },
+  {
+   "lot": 47,
+   "prefixes": [
+    "[13,5]",
+    "[13,6]",
+    "[13,7]",
+    "[13,8]",
+    "[13,5]",
+    "[13,6]",
+    "[13,7]",
+    "[13,8]"
+   ],
+   "code_file": "codes/lot47.py",
+   "code_sha256": "15096a6306c13807e7522f90aff78385d3213b8afcab62a9b7dcce2dcc92ff3f",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_13_5_score_max 113\nn16_prefixe_13_5_trouve_geq114 False\nn16_prefixe_13_5_witness None\nn16_prefixe_13_5_noeuds 6443714534\nn16_prefixe_13_6_score_max 113\nn16_prefixe_13_6_trouve_geq114 False\nn16_prefixe_13_6_witness None\nn16_prefixe_13_6_noeuds 6274428699\nn16_prefixe_13_7_score_max 113\nn16_prefixe_13_7_trouve_geq114 False\nn16_prefixe_13_7_witness None\nn16_prefixe_13_7_noeuds 6180920287\nn16_prefixe_13_8_score_max 113\nn16_prefixe_13_8_trouve_geq114 False\nn16_prefixe_13_8_witness None\nn16_prefixe_13_8_noeuds 6012811364\nexit 0\n",
+   "stdout_sha256": "772ab5cb66a96c47a5fb5a828a0926491111d384b3e7d9e877938febf7f48cff",
+   "original": {
+    "job": "job-8931635481d5451481cc",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 17136.013
+   },
+   "reproduction": {
+    "job": "job-1d3b9270894d41078796",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 16149.736,
+    "stdout_sha256": "772ab5cb66a96c47a5fb5a828a0926491111d384b3e7d9e877938febf7f48cff"
+   }
+  },
+  {
+   "lot": 48,
+   "prefixes": [
+    "[13,9]",
+    "[13,10]",
+    "[13,11]",
+    "[13,12]"
+   ],
+   "code_file": "codes/lot48.py",
+   "code_sha256": "a272f36ab2963711629f7b99058ccca3b5a4a41c98965c8a67ed60854683ae1a",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_13_9_score_max 113\nn16_prefixe_13_9_trouve_geq114 False\nn16_prefixe_13_9_witness None\nn16_prefixe_13_9_noeuds 5927457358\nn16_prefixe_13_10_score_max 113\nn16_prefixe_13_10_trouve_geq114 False\nn16_prefixe_13_10_witness None\nn16_prefixe_13_10_noeuds 5782458658\nn16_prefixe_13_11_score_max 113\nn16_prefixe_13_11_trouve_geq114 False\nn16_prefixe_13_11_witness None\nn16_prefixe_13_11_noeuds 5676682442\nn16_prefixe_13_12_score_max 113\nn16_prefixe_13_12_trouve_geq114 False\nn16_prefixe_13_12_witness None\nn16_prefixe_13_12_noeuds 5532264480\nexit 0\n",
+   "stdout_sha256": "009b48f3d734998a8d0a0d3d7583bf0dabe952fee63fa4589ab870129d517025",
+   "original": {
+    "job": "job-bbc2922f5ca2462b9225",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 15405.124
+   },
+   "reproduction": {
+    "job": "job-552e5cef88b942dd958e",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 13545.089,
+    "stdout_sha256": "009b48f3d734998a8d0a0d3d7583bf0dabe952fee63fa4589ab870129d517025"
+   }
+  },
+  {
+   "lot": 49,
+   "prefixes": [
+    "[13,14]",
+    "[13,15]",
+    "[13,16]",
+    "[14,1]"
+   ],
+   "code_file": "codes/lot49.py",
+   "code_sha256": "b8bc5df4266b4126084261cb03ab28e54d62bf976edde41e9653b17618d71569",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_13_14_score_max 113\nn16_prefixe_13_14_trouve_geq114 False\nn16_prefixe_13_14_witness None\nn16_prefixe_13_14_noeuds 5276570615\nn16_prefixe_13_15_score_max 113\nn16_prefixe_13_15_trouve_geq114 False\nn16_prefixe_13_15_witness None\nn16_prefixe_13_15_noeuds 5212040818\nn16_prefixe_13_16_score_max 113\nn16_prefixe_13_16_trouve_geq114 False\nn16_prefixe_13_16_witness None\nn16_prefixe_13_16_noeuds 5088720433\nn16_prefixe_14_1_score_max 113\nn16_prefixe_14_1_trouve_geq114 False\nn16_prefixe_14_1_witness None\nn16_prefixe_14_1_noeuds 5753694543\nexit 0\n",
+   "stdout_sha256": "bc55031deb21c4954d37add1ef636f4984032c5881044e09648663d9839254ca",
+   "original": {
+    "job": "job-962536265c3d44e3b294",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 16535.212
+   },
+   "reproduction": {
+    "job": "job-fe298f1419724b86a1e2",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14537.731,
+    "stdout_sha256": "bc55031deb21c4954d37add1ef636f4984032c5881044e09648663d9839254ca"
+   }
+  },
+  {
+   "lot": 50,
+   "prefixes": [
+    "[14,2]",
+    "[14,3]",
+    "[14,4]",
+    "[14,5]",
+    "[14,2]",
+    "[14,3]",
+    "[14,4]",
+    "[14,5]"
+   ],
+   "code_file": "codes/lot50.py",
+   "code_sha256": "d5bb0af2491c99928795ae3d20979efb1c808547ab32e70f7ac4d33c52c1630b",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_14_2_score_max 113\nn16_prefixe_14_2_trouve_geq114 False\nn16_prefixe_14_2_witness None\nn16_prefixe_14_2_noeuds 5656103623\nn16_prefixe_14_3_score_max 113\nn16_prefixe_14_3_trouve_geq114 False\nn16_prefixe_14_3_witness None\nn16_prefixe_14_3_noeuds 6350302431\nn16_prefixe_14_4_score_max 113\nn16_prefixe_14_4_trouve_geq114 False\nn16_prefixe_14_4_witness None\nn16_prefixe_14_4_noeuds 6285421802\nn16_prefixe_14_5_score_max 113\nn16_prefixe_14_5_trouve_geq114 False\nn16_prefixe_14_5_witness None\nn16_prefixe_14_5_noeuds 6085163164\nexit 0\n",
+   "stdout_sha256": "86501e9689132f8ffe6121971e03ea6be32096696bec458cb704fde7d2507920",
+   "original": {
+    "job": "job-028eb9cc251e4d09a335",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 16583.643
+   },
+   "reproduction": {
+    "job": "job-c4b5a3f8d0124d49b04d",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 15907.037,
+    "stdout_sha256": "86501e9689132f8ffe6121971e03ea6be32096696bec458cb704fde7d2507920"
+   }
+  },
+  {
+   "lot": 51,
+   "prefixes": [
+    "[14,6]",
+    "[14,7]",
+    "[14,8]",
+    "[14,9]"
+   ],
+   "code_file": "codes/lot51.py",
+   "code_sha256": "f1bc3a6e2eb0d8051e9d9fc2baef4c89e36bd749dde2fdd40216b1cfb993f84a",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_14_6_score_max 113\nn16_prefixe_14_6_trouve_geq114 False\nn16_prefixe_14_6_witness None\nn16_prefixe_14_6_noeuds 6012521533\nn16_prefixe_14_7_score_max 113\nn16_prefixe_14_7_trouve_geq114 False\nn16_prefixe_14_7_witness None\nn16_prefixe_14_7_noeuds 5771920540\nn16_prefixe_14_8_score_max 113\nn16_prefixe_14_8_trouve_geq114 False\nn16_prefixe_14_8_witness None\nn16_prefixe_14_8_noeuds 5777723454\nn16_prefixe_14_9_score_max 113\nn16_prefixe_14_9_trouve_geq114 False\nn16_prefixe_14_9_witness None\nn16_prefixe_14_9_noeuds 5612327981\nexit 0\n",
+   "stdout_sha256": "a8c93e921a98cc95188473e92d857d18f3898033b83a31a095a3ec4a301686ce",
+   "original": {
+    "job": "job-2792f2b18b5e4876ab46",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 16199.762
+   },
+   "reproduction": {
+    "job": "job-752fa0cfc1004fad9e72",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 15422.986,
+    "stdout_sha256": "a8c93e921a98cc95188473e92d857d18f3898033b83a31a095a3ec4a301686ce"
+   }
+  },
+  {
+   "lot": 52,
+   "prefixes": [
+    "[14,10]",
+    "[14,11]",
+    "[14,12]",
+    "[14,13]"
+   ],
+   "code_file": "codes/lot52.py",
+   "code_sha256": "9501408a3d9b9520f3e1ac0ba2a6bbbc607ddf7aa59a4dafbc78dfd36c4bf0f4",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_14_10_score_max 113\nn16_prefixe_14_10_trouve_geq114 False\nn16_prefixe_14_10_witness None\nn16_prefixe_14_10_noeuds 5540835351\nn16_prefixe_14_11_score_max 113\nn16_prefixe_14_11_trouve_geq114 False\nn16_prefixe_14_11_witness None\nn16_prefixe_14_11_noeuds 5383750954\nn16_prefixe_14_12_score_max 113\nn16_prefixe_14_12_trouve_geq114 False\nn16_prefixe_14_12_witness None\nn16_prefixe_14_12_noeuds 5328808918\nn16_prefixe_14_13_score_max 113\nn16_prefixe_14_13_trouve_geq114 False\nn16_prefixe_14_13_witness None\nn16_prefixe_14_13_noeuds 5172417500\nexit 0\n",
+   "stdout_sha256": "1a8e6c70fbac6fc577a42e8723ef83e58a6ac38c8914169cf53ca88d805840f9",
+   "original": {
+    "job": "job-d860fde7419a4e2ea91e",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 14849.95
+   },
+   "reproduction": {
+    "job": "job-f849486e5a224bb491ff",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14567.948,
+    "stdout_sha256": "1a8e6c70fbac6fc577a42e8723ef83e58a6ac38c8914169cf53ca88d805840f9"
+   }
+  },
+  {
+   "lot": 53,
+   "prefixes": [
+    "[14,15]",
+    "[14,16]",
+    "[15,1]",
+    "[15,2]",
+    "[14,15]",
+    "[14,16]",
+    "[15,1]",
+    "[15,2]"
+   ],
+   "code_file": "codes/lot53.py",
+   "code_sha256": "78fe883965c2446473f5e545759d966e9729f1bc46e26fecae96051c4a87b0b4",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_14_15_score_max 113\nn16_prefixe_14_15_trouve_geq114 False\nn16_prefixe_14_15_witness None\nn16_prefixe_14_15_noeuds 4949763379\nn16_prefixe_14_16_score_max 113\nn16_prefixe_14_16_trouve_geq114 False\nn16_prefixe_14_16_witness None\nn16_prefixe_14_16_noeuds 4904950466\nn16_prefixe_15_1_score_max 113\nn16_prefixe_15_1_trouve_geq114 False\nn16_prefixe_15_1_witness None\nn16_prefixe_15_1_noeuds 5389907628\nn16_prefixe_15_2_score_max 113\nn16_prefixe_15_2_trouve_geq114 False\nn16_prefixe_15_2_witness None\nn16_prefixe_15_2_noeuds 6141171864\nexit 0\n",
+   "stdout_sha256": "1d8b95a7ac70d028a021ac475e8e0b38e27426ef513e98377e69fe23e2397751",
+   "original": {
+    "job": "job-76e88a2341a04a21bc17",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14538.4
+   },
+   "reproduction": {
+    "job": "job-a070f0287d8f43bfa7af",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 15140.317,
+    "stdout_sha256": "1d8b95a7ac70d028a021ac475e8e0b38e27426ef513e98377e69fe23e2397751"
+   }
+  },
+  {
+   "lot": 54,
+   "prefixes": [
+    "[15,3]",
+    "[15,4]",
+    "[15,5]",
+    "[15,6]",
+    "[15,3]",
+    "[15,4]",
+    "[15,5]",
+    "[15,6]"
+   ],
+   "code_file": "codes/lot54.py",
+   "code_sha256": "3fea6f0ec9a7861ef0d28c1445c935c5f91cc985f37d4e939c7349b286414c71",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_15_3_score_max 113\nn16_prefixe_15_3_trouve_geq114 False\nn16_prefixe_15_3_witness None\nn16_prefixe_15_3_noeuds 6019756553\nn16_prefixe_15_4_score_max 113\nn16_prefixe_15_4_trouve_geq114 False\nn16_prefixe_15_4_witness None\nn16_prefixe_15_4_noeuds 5884861756\nn16_prefixe_15_5_score_max 113\nn16_prefixe_15_5_trouve_geq114 False\nn16_prefixe_15_5_witness None\nn16_prefixe_15_5_noeuds 5790593644\nn16_prefixe_15_6_score_max 113\nn16_prefixe_15_6_trouve_geq114 False\nn16_prefixe_15_6_witness None\nn16_prefixe_15_6_noeuds 5630831169\nexit 0\n",
+   "stdout_sha256": "af3dd6edf84451f3b8ec21a0ec7db2485f070579323b1519084d2348eff8908c",
+   "original": {
+    "job": "job-58660954033440fc986f",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 15338.098
+   },
+   "reproduction": {
+    "job": "job-10b820f77d7b4e9f9b66",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 13871.105,
+    "stdout_sha256": "af3dd6edf84451f3b8ec21a0ec7db2485f070579323b1519084d2348eff8908c"
+   }
+  },
+  {
+   "lot": 55,
+   "prefixes": [
+    "[15,7]",
+    "[15,8]",
+    "[15,9]",
+    "[15,10]"
+   ],
+   "code_file": "codes/lot55.py",
+   "code_sha256": "19a1a3106df0d1e8ed0abba563edf3c788cd372b7c7092a0c478c74812ab5124",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_15_7_score_max 113\nn16_prefixe_15_7_trouve_geq114 False\nn16_prefixe_15_7_witness None\nn16_prefixe_15_7_noeuds 5544927236\nn16_prefixe_15_8_score_max 113\nn16_prefixe_15_8_trouve_geq114 False\nn16_prefixe_15_8_witness None\nn16_prefixe_15_8_noeuds 5422315488\nn16_prefixe_15_9_score_max 113\nn16_prefixe_15_9_trouve_geq114 False\nn16_prefixe_15_9_witness None\nn16_prefixe_15_9_noeuds 5343438191\nn16_prefixe_15_10_score_max 113\nn16_prefixe_15_10_trouve_geq114 False\nn16_prefixe_15_10_witness None\nn16_prefixe_15_10_noeuds 5216195223\nexit 0\n",
+   "stdout_sha256": "8a5919c0f4e8b2ee6b80f42d283249008290bc2c697440ffda0c144b8c065eff",
+   "original": {
+    "job": "job-c1d8b9c4c8a445c8ad15",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 15025.16
+   },
+   "reproduction": {
+    "job": "job-158125b65f6847ae9706",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 16654.205,
+    "stdout_sha256": "8a5919c0f4e8b2ee6b80f42d283249008290bc2c697440ffda0c144b8c065eff"
+   }
+  },
+  {
+   "lot": 56,
+   "prefixes": [
+    "[15,11]",
+    "[15,12]",
+    "[15,13]",
+    "[15,14]",
+    "[15,11]",
+    "[15,12]",
+    "[15,13]",
+    "[15,14]"
+   ],
+   "code_file": "codes/lot56.py",
+   "code_sha256": "7b8811e810fbd493417cac607627b2c1cb07f92f2af7f17a39c35badd3579eb4",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_15_11_score_max 113\nn16_prefixe_15_11_trouve_geq114 False\nn16_prefixe_15_11_witness None\nn16_prefixe_15_11_noeuds 5138044793\nn16_prefixe_15_12_score_max 113\nn16_prefixe_15_12_trouve_geq114 False\nn16_prefixe_15_12_witness None\nn16_prefixe_15_12_noeuds 5004137169\nn16_prefixe_15_13_score_max 113\nn16_prefixe_15_13_trouve_geq114 False\nn16_prefixe_15_13_witness None\nn16_prefixe_15_13_noeuds 4943412219\nn16_prefixe_15_14_score_max 113\nn16_prefixe_15_14_trouve_geq114 False\nn16_prefixe_15_14_witness None\nn16_prefixe_15_14_noeuds 4830552896\nexit 0\n",
+   "stdout_sha256": "2755637ed42eff044a34d682048372d03ee9edfbda976dedf74fa5ac1fff8bcf",
+   "original": {
+    "job": "job-531dd4339c49435ebb20",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14213.827
+   },
+   "reproduction": {
+    "job": "job-5e7cfe01d87c4614b5e6",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 13882.024,
+    "stdout_sha256": "2755637ed42eff044a34d682048372d03ee9edfbda976dedf74fa5ac1fff8bcf"
+   }
+  },
+  {
+   "lot": 57,
+   "prefixes": [
+    "[15,16]",
+    "[16,1]",
+    "[16,2]",
+    "[16,3]"
+   ],
+   "code_file": "codes/lot57.py",
+   "code_sha256": "9b24712dd6d533a083c61b555d3108e0f29e2f00a356312d2d1f01f8add6bebd",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_15_16_score_max 113\nn16_prefixe_15_16_trouve_geq114 False\nn16_prefixe_15_16_witness None\nn16_prefixe_15_16_noeuds 4623878605\nn16_prefixe_16_1_score_max 113\nn16_prefixe_16_1_trouve_geq114 False\nn16_prefixe_16_1_witness None\nn16_prefixe_16_1_noeuds 5897289697\nn16_prefixe_16_2_score_max 113\nn16_prefixe_16_2_trouve_geq114 False\nn16_prefixe_16_2_witness None\nn16_prefixe_16_2_noeuds 5848690876\nn16_prefixe_16_3_score_max 113\nn16_prefixe_16_3_trouve_geq114 False\nn16_prefixe_16_3_witness None\nn16_prefixe_16_3_noeuds 5661847599\nexit 0\n",
+   "stdout_sha256": "037d576cee70498fd98e132de076fa299bf7dd1676ce35be16cb2534973e9813",
+   "original": {
+    "job": "job-0f7a7049935245efb154",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 15114.002
+   },
+   "reproduction": {
+    "job": "job-c7d807c99559488e92ff",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 12919.175,
+    "stdout_sha256": "037d576cee70498fd98e132de076fa299bf7dd1676ce35be16cb2534973e9813"
+   }
+  },
+  {
+   "lot": 58,
+   "prefixes": [
+    "[16,4]",
+    "[16,5]",
+    "[16,6]",
+    "[16,7]"
+   ],
+   "code_file": "codes/lot58.py",
+   "code_sha256": "2c8784cfeaf28311947f94f8de9244e26ea22a026983b24d065def8b546bd920",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_16_4_score_max 113\nn16_prefixe_16_4_trouve_geq114 False\nn16_prefixe_16_4_witness None\nn16_prefixe_16_4_noeuds 5619725394\nn16_prefixe_16_5_score_max 113\nn16_prefixe_16_5_trouve_geq114 False\nn16_prefixe_16_5_witness None\nn16_prefixe_16_5_noeuds 5441153854\nn16_prefixe_16_6_score_max 113\nn16_prefixe_16_6_trouve_geq114 False\nn16_prefixe_16_6_witness None\nn16_prefixe_16_6_noeuds 5388207595\nn16_prefixe_16_7_score_max 113\nn16_prefixe_16_7_trouve_geq114 False\nn16_prefixe_16_7_witness None\nn16_prefixe_16_7_noeuds 5234216718\nexit 0\n",
+   "stdout_sha256": "0de34f8b96030a3be757bceb5d5a739a526adb3351cc1f278ffa83c18bbfed8c",
+   "original": {
+    "job": "job-d64bc99c8fc64eeaabcc",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 16595.842
+   },
+   "reproduction": {
+    "job": "job-cdad42ce493348eba743",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14344.016,
+    "stdout_sha256": "0de34f8b96030a3be757bceb5d5a739a526adb3351cc1f278ffa83c18bbfed8c"
+   }
+  },
+  {
+   "lot": 59,
+   "prefixes": [
+    "[16,8]",
+    "[16,9]",
+    "[16,10]",
+    "[16,11]"
+   ],
+   "code_file": "codes/lot59.py",
+   "code_sha256": "3216d332ba2d278d5447e391a8b96963a8fe0abeaedca9750bda0887bc78929b",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_16_8_score_max 113\nn16_prefixe_16_8_trouve_geq114 False\nn16_prefixe_16_8_witness None\nn16_prefixe_16_8_noeuds 5130628083\nn16_prefixe_16_9_score_max 113\nn16_prefixe_16_9_trouve_geq114 False\nn16_prefixe_16_9_witness None\nn16_prefixe_16_9_noeuds 5054067148\nn16_prefixe_16_10_score_max 113\nn16_prefixe_16_10_trouve_geq114 False\nn16_prefixe_16_10_witness None\nn16_prefixe_16_10_noeuds 5005526085\nn16_prefixe_16_11_score_max 113\nn16_prefixe_16_11_trouve_geq114 False\nn16_prefixe_16_11_witness None\nn16_prefixe_16_11_noeuds 4857447896\nexit 0\n",
+   "stdout_sha256": "2726f96d219f2f807a0520aa7b195659964b2c722e29644da0a11629f08b55cc",
+   "original": {
+    "job": "job-aefc78a439cb42ceac31",
+    "agent": "agent-B",
+    "host": "host-1",
+    "duration_s": 14053.607
+   },
+   "reproduction": {
+    "job": "job-2e77a45be32a457b9091",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 14732.561,
+    "stdout_sha256": "2726f96d219f2f807a0520aa7b195659964b2c722e29644da0a11629f08b55cc"
+   }
+  },
+  {
+   "lot": 60,
+   "prefixes": [
+    "[16,12]",
+    "[16,13]",
+    "[16,14]",
+    "[16,15]"
+   ],
+   "code_file": "codes/lot60.py",
+   "code_sha256": "51ad0343aca277edd76bb04c0460bc65a09a83799903c9766bcd481b1a024d1f",
+   "stdout": "CONTROLE a(3) = 6\nCONTROLE a(4) = 9\nCONTROLE a(5) = 13\nCONTROLE a(6) = 19\nCONTROLE a(7) = 25\nCONTROLE a(8) = 32\nCONTROLE a(9) = 39\ncontrole_bb_egal_force_brute_n3_9 True\nn16_prefixe_16_12_score_max 113\nn16_prefixe_16_12_trouve_geq114 False\nn16_prefixe_16_12_witness None\nn16_prefixe_16_12_noeuds 4814378522\nn16_prefixe_16_13_score_max 113\nn16_prefixe_16_13_trouve_geq114 False\nn16_prefixe_16_13_witness None\nn16_prefixe_16_13_noeuds 4687026082\nn16_prefixe_16_14_score_max 113\nn16_prefixe_16_14_trouve_geq114 False\nn16_prefixe_16_14_witness None\nn16_prefixe_16_14_noeuds 4641370054\nn16_prefixe_16_15_score_max 113\nn16_prefixe_16_15_trouve_geq114 False\nn16_prefixe_16_15_witness None\nn16_prefixe_16_15_noeuds 4527264087\nexit 0\n",
+   "stdout_sha256": "f19b143bc3fdcbedec55881934ea6e6d380cfea947d7e5de083b42a75f3dcd73",
+   "original": {
+    "job": "job-64a0e8cc08a9437cbeee",
+    "agent": "agent-C",
+    "host": "host-1",
+    "duration_s": 13432.325
+   },
+   "reproduction": {
+    "job": "job-0eda9ac95a1a4be49cc7",
+    "agent": "agent-A",
+    "host": "host-1",
+    "duration_s": 11445.639,
+    "stdout_sha256": "f19b143bc3fdcbedec55881934ea6e6d380cfea947d7e5de083b42a75f3dcd73"
+   }
+  }
+ ]
+}

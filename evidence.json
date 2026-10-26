@@ -77,6 +77,7 @@
  "notes": [
   "Each run executed on a dedicated, network-less compute host that records the SHA-256 of the code and of the output.",
   "phase3_lot01_reproduction re-ran the exact code of phase3_lot01_original (rerun_of) from another server; the two stdout hashes are identical.",
-  "lot01_search.py is byte-for-byte the code of phase2_lot01_original (check its SHA-256)."
+  "lot01_search.py is byte-for-byte the code of phase2_lot01_original (check its SHA-256).",
+  "Correction 2026-10-26: 'on a different server' / 'from another server' above means submitted by a different agent (on another server); both runs executed on the SAME dedicated compute host. Independent second-host re-executions start on 2026-10-26 (see phase3/lots.json)."
  ]
 }
